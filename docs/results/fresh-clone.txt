@@ -1,0 +1,278 @@
+./scripts/cargo.sh fetch --locked
+ Downloading crates ...
+  Downloaded wasi v0.11.1+wasi-snapshot-preview1
+  Downloaded curve25519-dalek-derive v0.1.1
+  Downloaded zerocopy-derive v0.8.63
+  Downloaded fiat-crypto v0.2.9
+  Downloaded winapi v0.3.9
+  Downloaded winapi-i686-pc-windows-gnu v0.4.0
+  Downloaded winapi-x86_64-pc-windows-gnu v0.4.0
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+Collecting pip==26.2.2 (from -r requirements-dev.txt (line 1))
+  Using cached pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 2))
+  Using cached ruff-0.17.1-py3-none-macosx_11_0_arm64.whl.metadata (20 kB)
+Collecting pytest==9.1.1 (from -r requirements-dev.txt (line 3))
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pip-audit==2.9.0 (from -r requirements-dev.txt (line 4))
+  Using cached pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+Collecting iniconfig>=1.0.1 (from pytest==9.1.1->-r requirements-dev.txt (line 3))
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=22 (from pytest==9.1.1->-r requirements-dev.txt (line 3))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest==9.1.1->-r requirements-dev.txt (line 3))
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest==9.1.1->-r requirements-dev.txt (line 3))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached msgpack-1.2.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (8.3 kB)
+Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+  Using cached defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Using cached pip-26.2.2-py3-none-any.whl (1.8 MB)
+Using cached ruff-0.17.1-py3-none-macosx_11_0_arm64.whl (9.3 MB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pip_audit-2.9.0-py3-none-any.whl (58 kB)
+Using cached cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+Using cached cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pip_api-0.0.35-py3-none-any.whl (123 kB)
+Using cached pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+Using cached platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Using cached certifi-2026.10.19-py3-none-any.whl (136 kB)
+Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl (366 kB)
+Using cached filelock-4.2.4-py3-none-any.whl (162 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached license_expression-30.4.4-py3-none-any.whl (120 kB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached msgpack-1.2.3-cp313-cp313-macosx_11_0_arm64.whl (89 kB)
+Using cached packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+Using cached py_serializable-2.1.0-py3-none-any.whl (23 kB)
+Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached boolean_py-5.0-py3-none-any.whl (26 kB)
+Using cached defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: sortedcontainers, boolean.py, urllib3, toml, ruff, pyparsing, pygments, pluggy, platformdirs, pip, packaging, packageurl-python, msgpack, mdurl, license-expression, iniconfig, idna, filelock, defusedxml, charset_normalizer, certifi, requests, pytest, py-serializable, pip-requirements-parser, pip-api, markdown-it-py, rich, cyclonedx-python-lib, CacheControl, pip-audit
+  Attempting uninstall: pip
+    Found existing installation: pip 25.0
+    Uninstalling pip-25.0:
+      Successfully uninstalled pip-25.0
+Successfully installed CacheControl-0.14.4 boolean.py-5.0 certifi-2026.10.19 charset_normalizer-3.5.2 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 idna-3.20 iniconfig-2.3.1 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-26.2.2 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 pluggy-1.7.0 py-serializable-2.1.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 toml-0.10.2 urllib3-2.8.0
+./scripts/cargo.sh fmt --check
+./scripts/cargo.sh clippy --all-targets --locked -- -D warnings
+   Compiling libc v0.2.191
+   Compiling version_check v0.9.5
+    Checking cfg-if v1.0.5
+    Checking typenum v1.20.1
+   Compiling proc-macro2 v1.0.107
+   Compiling zerocopy v0.8.63
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling semver v1.0.28
+   Compiling serde_core v1.0.228
+    Checking signature v2.2.0
+    Checking zeroize v1.9.1
+    Checking subtle v2.6.1
+   Compiling rustc_version v0.4.1
+   Compiling serde v1.0.228
+   Compiling generic-array v0.14.7
+   Compiling serde_json v1.0.145
+    Checking ed25519 v2.2.3
+   Compiling curve25519-dalek v4.1.3
+    Checking httpdate v1.0.3
+    Checking chunked_transfer v1.5.0
+    Checking ascii v1.1.0
+    Checking itoa v1.0.18
+    Checking ryu v1.0.23
+    Checking log v0.4.34
+    Checking memchr v2.8.3
+    Checking tiny_http v0.12.0
+    Checking hex v0.4.3
+    Checking block-buffer v0.10.4
+    Checking crypto-common v0.1.7
+    Checking digest v0.10.7
+    Checking getrandom v0.2.17
+    Checking cpufeatures v0.2.17
+    Checking fs2 v0.4.3
+    Checking sha2 v0.10.9
+    Checking rand_core v0.6.4
+   Compiling syn v2.0.119
+    Checking ed25519-dalek v2.2.0
+   Compiling serde_derive v1.0.228
+    Checking ppv-lite86 v0.2.21
+    Checking rand_chacha v0.3.1
+    Checking rand v0.8.8
+    Checking seal-log v0.1.0 (/private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/seal-clone-h1wiausi/repo)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.10s
+.venv/bin/ruff check scripts tests
+All checks passed!
+.venv/bin/ruff format --check scripts tests
+5 files already formatted
+node --check web/app.js
+./scripts/cargo.sh build --release --locked
+   Compiling libc v0.2.191
+   Compiling version_check v0.9.5
+   Compiling cfg-if v1.0.5
+   Compiling typenum v1.20.1
+   Compiling proc-macro2 v1.0.107
+   Compiling semver v1.0.28
+   Compiling zerocopy v0.8.63
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling serde_core v1.0.228
+   Compiling signature v2.2.0
+   Compiling zeroize v1.9.1
+   Compiling rustc_version v0.4.1
+   Compiling generic-array v0.14.7
+   Compiling subtle v2.6.1
+   Compiling serde_json v1.0.145
+   Compiling serde v1.0.228
+   Compiling curve25519-dalek v4.1.3
+   Compiling ed25519 v2.2.3
+   Compiling ryu v1.0.23
+   Compiling log v0.4.34
+   Compiling memchr v2.8.3
+   Compiling httpdate v1.0.3
+   Compiling chunked_transfer v1.5.0
+   Compiling ascii v1.1.0
+   Compiling itoa v1.0.18
+   Compiling tiny_http v0.12.0
+   Compiling hex v0.4.3
+   Compiling syn v2.0.119
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling digest v0.10.7
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling cpufeatures v0.2.17
+   Compiling fs2 v0.4.3
+   Compiling sha2 v0.10.9
+   Compiling ed25519-dalek v2.2.0
+   Compiling serde_derive v1.0.228
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling seal-log v0.1.0 (/private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/seal-clone-h1wiausi/repo)
+    Finished `release` profile [optimized] target(s) in 5.56s
+./scripts/cargo.sh test --locked
+   Compiling cfg-if v1.0.5
+   Compiling typenum v1.20.1
+   Compiling libc v0.2.191
+   Compiling signature v2.2.0
+   Compiling zerocopy v0.8.63
+   Compiling serde_core v1.0.228
+   Compiling zeroize v1.9.1
+   Compiling subtle v2.6.1
+   Compiling itoa v1.0.18
+   Compiling ryu v1.0.23
+   Compiling log v0.4.34
+   Compiling ed25519 v2.2.3
+   Compiling memchr v2.8.3
+   Compiling httpdate v1.0.3
+   Compiling chunked_transfer v1.5.0
+   Compiling ascii v1.1.0
+   Compiling hex v0.4.3
+   Compiling tiny_http v0.12.0
+   Compiling generic-array v0.14.7
+   Compiling getrandom v0.2.17
+   Compiling cpufeatures v0.2.17
+   Compiling fs2 v0.4.3
+   Compiling rand_core v0.6.4
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling curve25519-dalek v4.1.3
+   Compiling ed25519-dalek v2.2.0
+   Compiling serde_json v1.0.145
+   Compiling serde v1.0.228
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling seal-log v0.1.0 (/private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/seal-clone-h1wiausi/repo)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.75s
+     Running unittests src/lib.rs (target/debug/deps/seal_log-a3d98e12b6323262)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/seal-00961442657a82a4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (target/debug/deps/core-0f7ee99996f6ab13)
+
+running 5 tests
+test payload_limits_and_canonical_hex ... ok
+test signed_bundles_trust_anchor_and_malformed_bounds ... ok
+test empty_and_chain_mutations ... ok
+test independent_reference_tree_matches ... ok
+test every_small_tree_inclusion_and_consistency ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.77s
+
+   Doc-tests seal_log
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+.venv/bin/python -m pytest -q tests/cli_test.py
+.....                                                                    [100%]
+5 passed in 0.91s
+./target/release/seal bench docs/results
+{"append_trials":[{"checkpoint_interval":64,"entries":512,"entries_per_second":363.46309706075857,"mode":"per_entry_fsync","seconds":1.408671208,"trial":0},{"checkpoint_interval":64,"entries":512,"entries_per_second":351.73353711437153,"mode":"per_entry_fsync","seconds":1.455647375,"trial":1},{"checkpoint_interval":64,"entries":512,"entries_per_second":344.2289780880849,"mode":"per_entry_fsync","seconds":1.487382041,"trial":2},{"checkpoint_interval":64,"entries":512,"entries_per_second":4955.474097369103,"mode":"checkpoint_batch_fsync","seconds":0.103320084,"trial":0},{"checkpoint_interval":64,"entries":512,"entries_per_second":4882.67550629292,"mode":"checkpoint_batch_fsync","seconds":0.104860542,"trial":1},{"checkpoint_interval":64,"entries":512,"entries_per_second":5728.374895285139,"mode":"checkpoint_batch_fsync","seconds":0.089379625,"trial":2}],"log_id":"1919191919191919191919191919191919191919191919191919191919191919","merkle_empty_root":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","proofs":{"consistency_bundle_json_bytes":1758,"consistency_hash_bytes":448,"consistency_hashes":14,"consistency_samples_us":[83.667,81.083,80.5,80.292,78.25,78.0,77.75,77.41699999999999,78.0,78.042,77.792,77.792,77.58300000000001,77.375,77.667,77.625,78.25,77.875,77.542,77.666,77.666,77.58399999999999,77.58300000000001,77.541,77.625,83.292,103.583,107.0,81.542,82.08399999999999,81.166,77.833,88.791,82.375,77.708,77.58300000000001,77.625,77.541,77.58300000000001,77.667,77.542,77.542,77.542,77.542,77.458,77.458,77.375,77.458,77.5,77.542,77.375,77.459,77.542,77.41699999999999,77.41600000000001,77.459,77.666,77.542,77.58399999999999,77.41699999999999,77.458,77.542,77.5,77.41699999999999,77.333,77.58300000000001,77.5,83.70899999999999,80.041,77.667,77.5,77.459,77.667,77.5,77.625,77.58399999999999,77.58399999999999,77.958,77.58300000000001,77.75,77.75,77.708,77.875,77.708,78.0,77.708,77.541,83.208,77.792,77.75,77.833,77.58399999999999,77.541,77.75,78.167,78.5,78.292,77.917,78.667,77.91600000000001,77.875,78.0,77.834,77.792,78.125,78.167,79.583,77.58399999999999,77.667,78.042,77.875,77.625,78.0,78.0,78.084,78.208,77.75,77.58300000000001,77.708,77.75,77.667,77.625,77.5,77.666,77.542,77.58399999999999,77.708,77.792,77.58300000000001,77.58300000000001,77.666,80.75,80.916,80.75,81.042,80.79100000000001,80.708,81.083,80.79100000000001,81.167,81.083,80.95899999999999,80.834,81.0,80.792,80.917,80.833,80.875,81.0,80.792,81.083,80.708,80.79100000000001,81.0,80.709,80.875,80.875,81.0,81.084,81.084,81.0,80.916,81.0,80.95800000000001,80.708,80.95800000000001,80.95800000000001,80.709,80.75,80.875,80.833,80.875,81.083,80.792,80.833,81.042,80.792,84.625,80.917,81.0,80.917,80.875,80.666,80.792,81.083,82.459,80.95899999999999,80.917,81.167,81.125,78.125,77.666,77.542,77.5,77.666,77.542,77.58300000000001,77.58300000000001,77.667,77.542,77.542,77.542,78.042,78.042,77.667,77.541,77.708,77.541,77.75,77.792,78.125,77.833,77.75,77.625,77.41699999999999,77.542,77.458,77.541,77.834,77.666,77.375,77.667,77.58300000000001,77.708,77.709,77.75,77.333,77.458,77.75,77.708,77.375,77.91600000000001,77.75,77.5,77.75,77.958,77.708,77.58300000000001,77.458,77.333,77.333,77.542,77.459,77.5,77.875,77.459,77.542,77.58300000000001,77.58300000000001,77.542,77.58300000000001,77.5,77.58300000000001,77.5,77.459,77.375,77.41699999999999,77.625,77.542,77.458,77.667,77.708,77.541,77.41600000000001,77.5,77.542,79.042,80.625,77.375,77.58300000000001,77.542,77.667,78.0,77.41600000000001,77.625,77.625,77.542,77.542,77.708,77.667,77.458,77.541,77.625,77.542,77.5,77.5,77.458,77.625,77.58399999999999,77.541,77.41699999999999,77.917,77.542,77.625,77.625,77.792,77.41699999999999,77.41699999999999,77.708,77.625,77.458,77.542,77.792,77.625,77.58399999999999,77.41600000000001,77.667,77.5,77.58399999999999,77.459,77.58300000000001,77.5,77.41699999999999,77.666,78.0,77.58399999999999,77.58300000000001,77.75,77.833,77.625,77.75,77.41699999999999,77.58300000000001,77.667,77.5,77.834,77.666,77.459,77.708,77.834,77.58300000000001,77.58300000000001,77.542,77.375,77.41600000000001,77.5,77.58300000000001,77.709,77.75,77.625,77.541,77.5,77.709,77.5,77.5,77.5,77.58399999999999,78.791,77.5,77.58300000000001,77.459,77.541,77.666,77.625,77.667,77.458,77.792,77.41699999999999,77.541,77.58300000000001,77.58300000000001,77.917,77.542,77.666,77.58399999999999,77.41699999999999,77.58300000000001,77.542,77.667,84.0,77.541,77.666,77.5,77.458,77.58399999999999,77.58399999999999,77.541,77.542,77.791,77.708,77.5,77.5,77.5,77.667,77.625,77.666,77.58399999999999,77.58300000000001,77.792,77.458,77.41699999999999,77.5,77.41699999999999,77.5,77.541,77.625,77.58300000000001,77.5,77.542,80.916,77.541,77.541,77.875,77.792,77.667,77.541,77.41699999999999,77.542,77.208,77.625,77.708,77.5,77.541,77.91600000000001,77.41699999999999,77.333,77.542,77.41600000000001,77.5,77.667,77.5,77.5,77.625,77.58399999999999,77.875,77.875,77.708,77.666,79.0,77.625,77.333,77.709,77.58300000000001,77.58300000000001,77.58300000000001,77.667,77.458,77.458,77.458,77.541,77.459,77.375,77.75,77.5,77.41600000000001,77.625,77.58300000000001,77.958,77.666,77.58399999999999,77.459,77.41699999999999,77.625,77.5,77.542,77.5,77.458,77.41699999999999,77.667,77.5,77.333,77.5,77.58399999999999,77.375,77.709,77.625,77.58300000000001,77.667,77.5,77.458,77.541,77.58399999999999,77.58399999999999,77.459,77.5,77.458,77.41600000000001,77.625,77.58399999999999,77.458,77.875,77.75,77.542,77.542,77.625,77.5,77.5,77.541,77.58300000000001,77.41699999999999,77.58399999999999,77.58300000000001,77.625,77.5,77.667,77.333,77.459,77.542,77.459,77.625],"consistency_verify_median_us":77.625,"inclusion_bundle_json_bytes":1519,"inclusion_hash_bytes":416,"inclusion_hashes":13,"inclusion_samples_us":[52.709,51.541,47.583,47.75,45.833,46.0,45.75,45.416,45.708999999999996,46.375,45.791000000000004,45.708999999999996,45.75,45.625,45.5,45.666,45.625,45.917,45.75,45.791999999999994,45.75,45.583,45.791999999999994,45.708,45.583,45.958000000000006,59.0,76.584,51.041000000000004,47.333999999999996,58.542,45.75,52.25,59.125,46.125,45.541000000000004,45.625,45.458,45.583,45.625,45.5,45.666,45.583,45.5,45.542,45.5,45.541000000000004,45.5,45.542,45.5,45.5,45.542,45.583,45.375,45.458999999999996,45.417,45.458999999999996,45.333,45.417,45.5,45.708,45.333,45.458999999999996,45.458,45.458,45.458,45.542,45.458999999999996,53.917,45.583,45.541000000000004,45.542,45.417,45.417,45.625,45.5,45.625,45.542,45.708,45.625,45.708999999999996,45.5,45.791999999999994,45.625,45.75,45.958999999999996,45.5,45.458,46.458,45.834,45.75,45.542,45.542,45.791999999999994,45.5,45.791000000000004,45.875,45.791000000000004,45.834,45.875,45.583,46.041999999999994,45.834,45.875,45.583,45.791000000000004,45.541000000000004,45.542,45.75,45.625,45.667,45.708999999999996,45.75,45.791999999999994,45.708999999999996,45.75,45.583,45.583,45.75,45.625,45.833,45.584,45.458999999999996,45.5,45.625,45.541000000000004,45.458,45.75,45.5,45.541000000000004,45.5,50.542,47.459,47.416999999999994,47.5,47.542,47.5,47.542,47.708,47.5,47.5,47.542,47.459,47.5,47.541,47.459,47.375,47.625,47.5,47.292,47.416000000000004,47.333000000000006,47.542,47.5,47.333999999999996,47.333999999999996,47.5,47.541,47.416000000000004,47.834,47.625,47.5,47.458,47.416000000000004,47.5,47.333000000000006,47.666000000000004,47.459,47.5,47.5,47.416999999999994,47.583,47.583,47.5,47.416000000000004,47.75,47.459,47.583,48.5,47.5,47.583999999999996,47.541,47.458,47.458,47.583999999999996,47.625,47.625,47.541,47.583999999999996,47.916,47.709,45.542,45.542,45.583,45.417,45.708,45.541000000000004,45.625,45.583,45.625,45.666,45.667,45.708999999999996,45.833,45.458999999999996,45.458,45.708,45.625,45.625,45.584,45.5,45.583,45.625,45.708999999999996,45.667,45.541000000000004,45.75,45.5,45.375,45.458999999999996,45.542,45.458,45.5,45.5,45.667,45.458,45.667,45.583,45.375,45.667,45.583,45.458,45.667,45.958000000000006,45.542,45.542,45.666,45.625,45.5,45.458,45.583,45.583,45.458999999999996,45.458,45.667,45.708999999999996,45.5,45.583,45.625,45.417,45.458,45.333,45.5,45.625,45.667,45.5,45.291,45.542,45.584,45.541000000000004,45.417,45.375,45.458,45.417,45.583,45.417,45.5,45.625,48.584,45.375,45.5,45.5,45.541000000000004,45.542,45.583,45.458,45.666,45.542,45.583,45.625,45.583,45.583,45.625,45.458999999999996,45.625,45.5,45.458,45.416,45.625,45.708999999999996,45.542,45.791000000000004,45.542,45.583,45.416,45.791000000000004,45.5,45.416,45.416,45.5,45.292,45.416,45.5,45.667,45.584,45.542,45.584,45.667,45.542,45.458999999999996,45.542,45.541000000000004,45.542,45.458,45.542,45.667,45.541000000000004,45.542,45.75,45.833,45.75,45.5,45.417,45.667,45.708,45.458999999999996,45.708,45.542,45.583,45.458999999999996,45.708,45.625,45.5,45.625,45.542,45.5,45.417,45.417,45.5,45.458,45.583,45.458,45.625,45.625,45.5,45.417,45.458999999999996,45.542,45.75,45.625,45.583,45.584,45.625,45.583,45.708,45.541000000000004,45.583,45.5,45.708999999999996,45.542,45.583,45.542,46.041000000000004,45.5,45.5,45.625,45.417,45.541000000000004,45.625,45.458,45.542,45.5,45.458,45.333,45.417,45.584,45.542,45.292,45.667,45.5,45.458,45.625,45.667,45.458999999999996,45.416,46.0,45.584,45.625,45.625,45.5,45.417,45.375,45.584,45.458,45.458999999999996,45.375,45.667,45.458,45.625,45.625,48.25,45.542,45.667,45.542,45.5,45.333,45.708,45.584,45.5,45.458,45.708,45.542,45.417,45.5,45.625,45.333,45.416,45.542,45.375,45.583,45.458999999999996,45.375,45.334,45.584,45.542,45.625,45.666,45.584,45.833,45.667,45.542,45.458,45.667,45.541000000000004,45.458,45.625,45.5,45.375,45.542,45.417,45.458,45.417,45.666,45.458999999999996,45.417,45.458999999999996,45.667,45.5,45.583,45.417,45.625,45.584,45.416,45.458,45.791999999999994,45.333,45.458,45.583,45.458,45.5,45.625,45.333,45.625,45.5,45.75,45.584,45.417,45.541000000000004,45.583,45.375,45.625,45.584,45.5,45.458999999999996,45.667,45.417,45.458,45.5,45.708999999999996,45.583,45.5,45.75,45.584,45.625,45.5,45.542,45.542,45.458,45.625,45.417,45.541000000000004,45.541000000000004,45.583,45.542,45.458,45.333,45.541000000000004,45.5,45.5,45.416],"inclusion_verify_median_us":45.583,"old_size":2049,"tree_size":4097},"public_key":"2152f8d19b791d24453242e15f2eab6cb7cffa7b6a5ed30097960e069881db12","rollback":{"newer_pin_detects_tail_removal":true,"valid_older_prefix_verifies_without_newer_pin":true},"scope":"local synthetic finite corpus; trusted public key, identity and retained signed head","tamper":{"detected":770,"file_bit_flips":5160,"file_bit_flips_detected":5160,"injected":770}}
+python3 scripts/render_readme.py

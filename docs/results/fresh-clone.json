@@ -1,0 +1,32 @@
+{
+  "source_commit": "7c20f57db2fc8ed2fa012ccf5ab02f3926af0667",
+  "checks": [
+    "setup",
+    "lint",
+    "Rust tests",
+    "real CLI/HTTP/process tests",
+    "native benchmark",
+    "actual make demo",
+    "live append/seal",
+    "both proof kinds"
+  ],
+  "size": 97,
+  "checkpoint": {
+    "chain_head": "61868bb720c0e504e2eb604b593161f68fff92b5aa094ac90991256c9e1026b2",
+    "log_id": "d895acff062711e7f961b527bfd18db7da5df1278c496f6eb540903d69db8a8c",
+    "root": "28d36cf1d50bfc19b6879041f66d5d5bb5541c84b5471637482a51a2ea04c203",
+    "signature": "a11319527b8e6803f376365b6a91e419145e96a524c23c81b5e62d9230bba62751278a7ce7cb56de98f19e4e6ce4c5d51ad38a581a06ec15aaf26fae22f0b405",
+    "size": 97,
+    "version": 1
+  },
+  "verified": {
+    "inclusion": {
+      "reason": "Signature and Merkle path match the supplied trust anchor.",
+      "verified": true
+    },
+    "consistency": {
+      "reason": "Signature and Merkle path match the supplied trust anchor.",
+      "verified": true
+    }
+  }
+}

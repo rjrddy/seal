@@ -46,6 +46,8 @@ The Rust HTTP service defaults to loopback and rejects unexpected Host/Origin va
 
 The benchmark mutates entries at every position in a finite synthetic corpus: payload-byte change, deletion and adjacent swap. A separate small physical-file fixture tests every bit at every byte position, including canonical JSON punctuation. Each case is checked against a retained complete signed head. The observed detection rate applies to those cases, not an empirical quantification of cryptographic collision resistance or all attacks.
 
+A separate [adversarial control](results/rehashed-fork-control.txt) rewrites payloads, recomputes a valid chain and even creates a validly signed fork: the retained commitment still rejects it.
+
 The test suite covers every small tree size/prefix, an independent stack-based root constructor, wrong keys/identities, invalid signatures, extra/corrupt proof nodes, actual file edits/torn tails, OS writer fencing, real HTTP requests and actual SIGKILL/restart. CI executes a real nonroot Docker image, acknowledges an append, kills/restarts it, verifies the same checkpoint, then intentionally tears a tail and requires startup rejection. Raw timings, errors, browser artifacts, tool versions and machine details are retained. No benchmark is reported as hosted performance.
 
 References: [RFC 9162 cryptographic components](https://www.rfc-editor.org/rfc/rfc9162.html), [dalek strict verification API](https://docs.rs/ed25519-dalek/latest/ed25519_dalek/struct.VerifyingKey.html), [Certificate Transparency trust roles](https://certificate.transparency.dev/howctworks/). They inform the algorithms and distinctions; Seal is not CT-compliant infrastructure.

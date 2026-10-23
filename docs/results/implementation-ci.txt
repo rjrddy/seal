@@ -1,0 +1,1413 @@
+verify	Set up job	﻿2026-10-23T06:08:17.3842335Z Current runner version: '2.338.0'
+verify	Set up job	2026-10-23T06:08:17.3869511Z ##[group]Runner Image Provisioner
+verify	Set up job	2026-10-23T06:08:17.3870418Z Hosted Compute Agent
+verify	Set up job	2026-10-23T06:08:17.3871037Z Version: 20261012.601
+verify	Set up job	2026-10-23T06:08:17.3871739Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+verify	Set up job	2026-10-23T06:08:17.3872462Z Build Date: 2026-10-12T17:48:21Z
+verify	Set up job	2026-10-23T06:08:17.3873108Z Worker ID: {22f01163-598b-4977-851d-5ac4fe17769c}
+verify	Set up job	2026-10-23T06:08:17.3873882Z Region: westus
+verify	Set up job	2026-10-23T06:08:17.3874459Z Cloud: Azure
+verify	Set up job	2026-10-23T06:08:17.3875455Z ##[endgroup]
+verify	Set up job	2026-10-23T06:08:17.3877169Z ##[group]Operating System
+verify	Set up job	2026-10-23T06:08:17.3877817Z Ubuntu
+verify	Set up job	2026-10-23T06:08:17.3878419Z 26.04.1
+verify	Set up job	2026-10-23T06:08:17.3878958Z LTS
+verify	Set up job	2026-10-23T06:08:17.3879497Z ##[endgroup]
+verify	Set up job	2026-10-23T06:08:17.3880050Z ##[group]Runner Image
+verify	Set up job	2026-10-23T06:08:17.3880637Z Image: ubuntu-26.04
+verify	Set up job	2026-10-23T06:08:17.3881238Z Version: 20261012.163.1
+verify	Set up job	2026-10-23T06:08:17.3882355Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261012.163/images/ubuntu/Ubuntu2604-Readme.md
+verify	Set up job	2026-10-23T06:08:17.3884159Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261012.163
+verify	Set up job	2026-10-23T06:08:17.3885112Z ##[endgroup]
+verify	Set up job	2026-10-23T06:08:17.3886284Z ##[group]GITHUB_TOKEN Permissions
+verify	Set up job	2026-10-23T06:08:17.3888439Z Contents: read
+verify	Set up job	2026-10-23T06:08:17.3889193Z Metadata: read
+verify	Set up job	2026-10-23T06:08:17.3889740Z ##[endgroup]
+verify	Set up job	2026-10-23T06:08:17.3891887Z Secret source: Actions
+verify	Set up job	2026-10-23T06:08:17.3892869Z Cache mode: write
+verify	Set up job	2026-10-23T06:08:17.3893530Z Prepare workflow directory
+verify	Set up job	2026-10-23T06:08:17.4267639Z Prepare all required actions
+verify	Set up job	2026-10-23T06:08:17.4341767Z Getting action download info
+verify	Set up job	2026-10-23T06:08:17.7859755Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify	Set up job	2026-10-23T06:08:17.9009993Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+verify	Set up job	2026-10-23T06:08:17.9602263Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+verify	Set up job	2026-10-23T06:08:18.2016138Z Complete job name: verify
+verify	Run actions/checkout@v4	﻿2026-10-23T06:08:18.2819852Z ##[group]Run actions/checkout@v4
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2820764Z with:
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2821191Z   repository: rjrddy/seal
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2824854Z   token: ***
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2825287Z   ssh-strict: true
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2825718Z   ssh-user: git
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2826157Z   persist-credentials: true
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2826649Z   clean: true
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2827296Z   sparse-checkout-cone-mode: true
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2827819Z   fetch-depth: 1
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2828236Z   fetch-tags: false
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2828674Z   show-progress: true
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2829114Z   lfs: false
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2829524Z   submodules: false
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2829961Z   set-safe-directory: true
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2830466Z   allow-unsafe-pr-checkout: false
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.2831288Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3843475Z Syncing repository: rjrddy/seal
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3845963Z ##[group]Getting Git version info
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3847316Z Working directory is '/home/runner/work/seal/seal'
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3848918Z [command]/usr/bin/git version
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3849782Z git version 2.55.0
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3874886Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3891012Z Temporarily overriding HOME='/home/runner/work/_temp/fb22e527-2b80-470c-a041-64e0eb9e24a7' before making global git config changes
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3893305Z Adding repository directory to the temporary git global config as a safe directory
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3896231Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/seal/seal
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3957223Z Deleting the contents of '/home/runner/work/seal/seal'
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3961230Z ##[group]Initializing the repository
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.3966460Z [command]/usr/bin/git init /home/runner/work/seal/seal
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4114959Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4118739Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4121838Z hint: to use in all of your new repositories, which will suppress this warning,
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4123744Z hint: call:
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4124584Z hint:
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4125562Z hint: 	git config --global init.defaultBranch <name>
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4127139Z hint:
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4128380Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4130093Z hint: 'development'. The just-created branch can be renamed via this command:
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4131488Z hint:
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4132641Z hint: 	git branch -m <name>
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4133989Z hint:
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4135239Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4137161Z Initialized empty Git repository in /home/runner/work/seal/seal/.git/
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4140455Z [command]/usr/bin/git remote add origin https://github.com/rjrddy/seal
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4177371Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4178773Z ##[group]Disabling automatic garbage collection
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4182222Z [command]/usr/bin/git config --local gc.auto 0
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4219495Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4220648Z ##[group]Setting up auth
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4227288Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4263013Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4833362Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.4873910Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.5189231Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.5227924Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.5505403Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.5545626Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.5546498Z ##[group]Fetching the repository
+verify	Run actions/checkout@v4	2026-10-23T06:08:18.5555721Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7c20f57db2fc8ed2fa012ccf5ab02f3926af0667:refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0781982Z From https://github.com/rjrddy/seal
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0785113Z  * [new ref]         7c20f57db2fc8ed2fa012ccf5ab02f3926af0667 -> origin/main
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0792017Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0794676Z ##[group]Determining the checkout info
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0798017Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0800272Z [command]/usr/bin/git sparse-checkout disable
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0857569Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0891379Z ##[group]Checking out the ref
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.0896482Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.2628085Z Switched to a new branch 'main'
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.2633278Z branch 'main' set up to track 'origin/main'.
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.2640121Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.2695565Z [command]/usr/bin/git log -1 --format=%H
+verify	Run actions/checkout@v4	2026-10-23T06:08:21.2722484Z 7c20f57db2fc8ed2fa012ccf5ab02f3926af0667
+verify	Run actions/setup-python@v5	﻿2026-10-23T06:08:21.3201474Z ##[group]Run actions/setup-python@v5
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.3202960Z with:
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.3203879Z   python-version: 3.13
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.3204950Z   check-latest: false
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.3215331Z   token: ***
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.3216335Z   update-environment: true
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.3217621Z   allow-prereleases: false
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.3218735Z   freethreaded: false
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.3220023Z ##[endgroup]
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.4842088Z ##[group]Installed versions
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.5197789Z (node:2346) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.5198886Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.5199936Z Successfully set up CPython (3.13.16)
+verify	Run actions/setup-python@v5	2026-10-23T06:08:21.5201004Z ##[endgroup]
+verify	Run actions/setup-node@v4	﻿2026-10-23T06:08:21.5442729Z ##[group]Run actions/setup-node@v4
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5443182Z with:
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5443486Z   node-version: 22
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5443784Z   always-auth: false
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5444081Z   check-latest: false
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5447054Z   token: ***
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5447441Z env:
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5447783Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5448354Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5448865Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5449344Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5449804Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5450261Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.5450650Z ##[endgroup]
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.7191692Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.7196444Z (node:2354) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.7197745Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-node@v4	2026-10-23T06:08:21.7200334Z ##[group]Environment details
+verify	Run actions/setup-node@v4	2026-10-23T06:08:22.1587609Z node: v22.23.3
+verify	Run actions/setup-node@v4	2026-10-23T06:08:22.1588405Z npm: 10.9.9
+verify	Run actions/setup-node@v4	2026-10-23T06:08:22.1588871Z yarn: 1.22.22
+verify	Run actions/setup-node@v4	2026-10-23T06:08:22.1590308Z ##[endgroup]
+verify	Run make setup lint test	﻿2026-10-23T06:08:22.1737955Z ##[group]Run make setup lint test
+verify	Run make setup lint test	2026-10-23T06:08:22.1738428Z ^[[36;1mmake setup lint test^[[0m
+verify	Run make setup lint test	2026-10-23T06:08:22.1928731Z shell: /usr/bin/bash -e {0}
+verify	Run make setup lint test	2026-10-23T06:08:22.1929137Z env:
+verify	Run make setup lint test	2026-10-23T06:08:22.1929507Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup lint test	2026-10-23T06:08:22.1930079Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run make setup lint test	2026-10-23T06:08:22.1930652Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup lint test	2026-10-23T06:08:22.1931152Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup lint test	2026-10-23T06:08:22.1931659Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup lint test	2026-10-23T06:08:22.1932189Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run make setup lint test	2026-10-23T06:08:22.1932626Z ##[endgroup]
+verify	Run make setup lint test	2026-10-23T06:08:22.2338980Z ./scripts/cargo.sh fetch --locked
+verify	Run make setup lint test	2026-10-23T06:08:22.2775913Z info: syncing channel updates for 1.99.1-x86_64-unknown-linux-gnu
+verify	Run make setup lint test	2026-10-23T06:08:22.3818247Z info: latest update on 2026-10-15 for version 1.99.1 (58cf8f9c3 2026-10-13)
+verify	Run make setup lint test	2026-10-23T06:08:22.3820872Z info: downloading 5 components
+verify	Run make setup lint test	2026-10-23T06:08:31.0814471Z warn: the missing active toolchain `1.99.1-x86_64-unknown-linux-gnu` has been auto-installed
+verify	Run make setup lint test	2026-10-23T06:08:31.0815819Z warn: this might cause rustup commands to take longer time to finish than expected
+verify	Run make setup lint test	2026-10-23T06:08:31.0817387Z info: you may opt out with `RUSTUP_AUTO_INSTALL=0` or `rustup set auto-install disable`
+verify	Run make setup lint test	2026-10-23T06:08:31.1255055Z     Updating crates.io index
+verify	Run make setup lint test	2026-10-23T06:08:31.2439796Z  Downloading crates ...
+verify	Run make setup lint test	2026-10-23T06:08:31.2728810Z   Downloaded block-buffer v0.10.4
+verify	Run make setup lint test	2026-10-23T06:08:31.2764664Z   Downloaded serde_derive v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:31.2804540Z   Downloaded cfg-if v1.0.5
+verify	Run make setup lint test	2026-10-23T06:08:31.2823825Z   Downloaded typenum v1.20.1
+verify	Run make setup lint test	2026-10-23T06:08:31.2878768Z   Downloaded rand_core v0.6.4
+verify	Run make setup lint test	2026-10-23T06:08:31.2899682Z   Downloaded ryu v1.0.23
+verify	Run make setup lint test	2026-10-23T06:08:31.2945090Z   Downloaded digest v0.10.7
+verify	Run make setup lint test	2026-10-23T06:08:31.2967983Z   Downloaded generic-array v0.14.7
+verify	Run make setup lint test	2026-10-23T06:08:31.2982109Z   Downloaded ed25519 v2.2.3
+verify	Run make setup lint test	2026-10-23T06:08:31.3009197Z   Downloaded spki v0.7.3
+verify	Run make setup lint test	2026-10-23T06:08:31.3037014Z   Downloaded log v0.4.34
+verify	Run make setup lint test	2026-10-23T06:08:31.3066432Z   Downloaded serde_core v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:31.3092694Z   Downloaded proc-macro2 v1.0.107
+verify	Run make setup lint test	2026-10-23T06:08:31.3120532Z   Downloaded itoa v1.0.18
+verify	Run make setup lint test	2026-10-23T06:08:31.3133938Z   Downloaded signature v2.2.0
+verify	Run make setup lint test	2026-10-23T06:08:31.3147485Z   Downloaded const-oid v0.9.6
+verify	Run make setup lint test	2026-10-23T06:08:31.3165349Z   Downloaded cpufeatures v0.2.17
+verify	Run make setup lint test	2026-10-23T06:08:31.3178357Z   Downloaded rustc_version v0.4.1
+verify	Run make setup lint test	2026-10-23T06:08:31.3190259Z   Downloaded semver v1.0.28
+verify	Run make setup lint test	2026-10-23T06:08:31.3211479Z   Downloaded tiny_http v0.12.0
+verify	Run make setup lint test	2026-10-23T06:08:31.3247095Z   Downloaded version_check v0.9.5
+verify	Run make setup lint test	2026-10-23T06:08:31.3259147Z   Downloaded wasi v0.11.1+wasi-snapshot-preview1
+verify	Run make setup lint test	2026-10-23T06:08:31.3274285Z   Downloaded ed25519-dalek v2.2.0
+verify	Run make setup lint test	2026-10-23T06:08:31.3303308Z   Downloaded curve25519-dalek-derive v0.1.1
+verify	Run make setup lint test	2026-10-23T06:08:31.3313758Z   Downloaded hex v0.4.3
+verify	Run make setup lint test	2026-10-23T06:08:31.3328025Z   Downloaded ascii v1.1.0
+verify	Run make setup lint test	2026-10-23T06:08:31.3345814Z   Downloaded sha2 v0.10.9
+verify	Run make setup lint test	2026-10-23T06:08:31.3369542Z   Downloaded serde_json v1.0.145
+verify	Run make setup lint test	2026-10-23T06:08:31.3438532Z   Downloaded getrandom v0.2.17
+verify	Run make setup lint test	2026-10-23T06:08:31.3466001Z   Downloaded crypto-common v0.1.7
+verify	Run make setup lint test	2026-10-23T06:08:31.3474793Z   Downloaded fs2 v0.4.3
+verify	Run make setup lint test	2026-10-23T06:08:31.3485220Z   Downloaded unicode-ident v1.0.27
+verify	Run make setup lint test	2026-10-23T06:08:31.3511680Z   Downloaded subtle v2.6.1
+verify	Run make setup lint test	2026-10-23T06:08:31.3522684Z   Downloaded zeroize v1.9.1
+verify	Run make setup lint test	2026-10-23T06:08:31.3536885Z   Downloaded base64ct v1.8.3
+verify	Run make setup lint test	2026-10-23T06:08:31.3561924Z   Downloaded pkcs8 v0.10.2
+verify	Run make setup lint test	2026-10-23T06:08:31.3588596Z   Downloaded serde v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:31.3621571Z   Downloaded rand_chacha v0.3.1
+verify	Run make setup lint test	2026-10-23T06:08:31.3631891Z   Downloaded httpdate v1.0.3
+verify	Run make setup lint test	2026-10-23T06:08:31.3643286Z   Downloaded chunked_transfer v1.5.0
+verify	Run make setup lint test	2026-10-23T06:08:31.3655556Z   Downloaded ppv-lite86 v0.2.21
+verify	Run make setup lint test	2026-10-23T06:08:31.3667651Z   Downloaded quote v1.0.47
+verify	Run make setup lint test	2026-10-23T06:08:31.3692782Z   Downloaded zerocopy-derive v0.8.63
+verify	Run make setup lint test	2026-10-23T06:08:31.3812106Z   Downloaded rand v0.8.8
+verify	Run make setup lint test	2026-10-23T06:08:31.3843531Z   Downloaded der v0.7.10
+verify	Run make setup lint test	2026-10-23T06:08:31.3893536Z   Downloaded memchr v2.8.3
+verify	Run make setup lint test	2026-10-23T06:08:31.3945715Z   Downloaded syn v2.0.119
+verify	Run make setup lint test	2026-10-23T06:08:31.4047967Z   Downloaded zerocopy v0.8.63
+verify	Run make setup lint test	2026-10-23T06:08:31.4314635Z   Downloaded curve25519-dalek v4.1.3
+verify	Run make setup lint test	2026-10-23T06:08:31.4393763Z   Downloaded fiat-crypto v0.2.9
+verify	Run make setup lint test	2026-10-23T06:08:31.4485674Z   Downloaded libc v0.2.191
+verify	Run make setup lint test	2026-10-23T06:08:31.4938363Z   Downloaded winapi v0.3.9
+verify	Run make setup lint test	2026-10-23T06:08:31.5385126Z   Downloaded winapi-x86_64-pc-windows-gnu v0.4.0
+verify	Run make setup lint test	2026-10-23T06:08:31.6782539Z   Downloaded winapi-i686-pc-windows-gnu v0.4.0
+verify	Run make setup lint test	2026-10-23T06:08:31.8308242Z python3 -m venv .venv
+verify	Run make setup lint test	2026-10-23T06:08:37.8302818Z .venv/bin/python -m pip install -r requirements-dev.txt
+verify	Run make setup lint test	2026-10-23T06:08:38.3032280Z Collecting pip==26.2.2 (from -r requirements-dev.txt (line 1))
+verify	Run make setup lint test	2026-10-23T06:08:38.3819552Z   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+verify	Run make setup lint test	2026-10-23T06:08:38.7864031Z Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 2))
+verify	Run make setup lint test	2026-10-23T06:08:38.8077146Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+verify	Run make setup lint test	2026-10-23T06:08:38.8494749Z Collecting pytest==9.1.1 (from -r requirements-dev.txt (line 3))
+verify	Run make setup lint test	2026-10-23T06:08:38.8706654Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+verify	Run make setup lint test	2026-10-23T06:08:38.8993446Z Collecting pip-audit==2.9.0 (from -r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:38.9202071Z   Downloading pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+verify	Run make setup lint test	2026-10-23T06:08:38.9493148Z Collecting iniconfig>=1.0.1 (from pytest==9.1.1->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test	2026-10-23T06:08:38.9704027Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+verify	Run make setup lint test	2026-10-23T06:08:38.9967721Z Collecting packaging>=22 (from pytest==9.1.1->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test	2026-10-23T06:08:39.0180560Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.0404220Z Collecting pluggy<2,>=1.5 (from pytest==9.1.1->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test	2026-10-23T06:08:39.0636280Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.0935053Z Collecting pygments>=2.7.2 (from pytest==9.1.1->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test	2026-10-23T06:08:39.1148262Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.1386271Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.1595565Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.2002063Z Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.2213687Z   Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.2465384Z Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.2674112Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.2924782Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.3132534Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.3464987Z Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.3676554Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.4070708Z Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.4280557Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.4531451Z Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.4741612Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.5037146Z Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.5246564Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.5544584Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.5769375Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.6069452Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.6277975Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.6551752Z Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.6762044Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.6988816Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.7206754Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.7448633Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.7659511Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.7890798Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.8096646Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.9037689Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.9249393Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+verify	Run make setup lint test	2026-10-23T06:08:39.9625063Z Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:39.9839795Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.0180757Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:40.0389215Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.1656481Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:40.1874348Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.2210318Z Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:40.2424215Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.2725717Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:40.2936428Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.3202381Z Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:40.3409411Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.3679905Z Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:40.3891156Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.4140186Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 4))
+verify	Run make setup lint test	2026-10-23T06:08:40.4346135Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.4599904Z Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+verify	Run make setup lint test	2026-10-23T06:08:40.5445242Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 29.6 MB/s  0:00:00
+verify	Run make setup lint test	2026-10-23T06:08:40.5698652Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+verify	Run make setup lint test	2026-10-23T06:08:40.6332867Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 166.0 MB/s  0:00:00
+verify	Run make setup lint test	2026-10-23T06:08:40.6549448Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.6792677Z Downloading pip_audit-2.9.0-py3-none-any.whl (58 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.7044075Z Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.7290540Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.7526028Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.7763947Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.7999779Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.8241787Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.8491698Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.8739148Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.8973925Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.9208564Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.9458344Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.9697300Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+verify	Run make setup lint test	2026-10-23T06:08:40.9943080Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.0183388Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.0423380Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.0660253Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.0919297Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+verify	Run make setup lint test	2026-10-23T06:08:41.0994086Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 203.1 MB/s  0:00:00
+verify	Run make setup lint test	2026-10-23T06:08:41.1207596Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.1448526Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.1694887Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.1930266Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.2175560Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.2416123Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.2673900Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.2910467Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.3147996Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.3383432Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+verify	Run make setup lint test	2026-10-23T06:08:41.5004309Z Installing collected packages: sortedcontainers, boolean.py, urllib3, toml, ruff, pyparsing, pygments, pluggy, platformdirs, pip, packaging, packageurl-python, msgpack, mdurl, license-expression, iniconfig, idna, filelock, defusedxml, charset_normalizer, certifi, requests, pytest, py-serializable, pip-requirements-parser, pip-api, markdown-it-py, rich, cyclonedx-python-lib, CacheControl, pip-audit
+verify	Run make setup lint test	2026-10-23T06:08:42.6410274Z   Attempting uninstall: pip
+verify	Run make setup lint test	2026-10-23T06:08:42.6438466Z     Found existing installation: pip 26.2.1
+verify	Run make setup lint test	2026-10-23T06:08:42.6771955Z     Uninstalling pip-26.2.1:
+verify	Run make setup lint test	2026-10-23T06:08:42.6833107Z       Successfully uninstalled pip-26.2.1
+verify	Run make setup lint test	2026-10-23T06:08:44.8745890Z 
+verify	Run make setup lint test	2026-10-23T06:08:44.8785038Z Successfully installed CacheControl-0.14.4 boolean.py-5.0 certifi-2026.10.19 charset_normalizer-3.5.2 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 idna-3.20 iniconfig-2.3.1 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-26.2.2 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 pluggy-1.7.0 py-serializable-2.1.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 toml-0.10.2 urllib3-2.8.0
+verify	Run make setup lint test	2026-10-23T06:08:44.8793229Z 
+verify	Run make setup lint test	2026-10-23T06:08:44.8794084Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+verify	Run make setup lint test	2026-10-23T06:08:44.8795424Z [notice] To update, run: /home/runner/work/seal/seal/.venv/bin/python -m pip install --upgrade pip
+verify	Run make setup lint test	2026-10-23T06:08:44.9597516Z ./scripts/cargo.sh fmt --check
+verify	Run make setup lint test	2026-10-23T06:08:45.0350744Z ./scripts/cargo.sh clippy --all-targets --locked -- -D warnings
+verify	Run make setup lint test	2026-10-23T06:08:45.1475075Z    Compiling version_check v0.9.5
+verify	Run make setup lint test	2026-10-23T06:08:45.1475864Z    Compiling proc-macro2 v1.0.107
+verify	Run make setup lint test	2026-10-23T06:08:45.1476432Z    Compiling unicode-ident v1.0.27
+verify	Run make setup lint test	2026-10-23T06:08:45.1487953Z    Compiling libc v0.2.191
+verify	Run make setup lint test	2026-10-23T06:08:45.2079746Z    Compiling quote v1.0.47
+verify	Run make setup lint test	2026-10-23T06:08:45.3556602Z     Checking typenum v1.20.1
+verify	Run make setup lint test	2026-10-23T06:08:45.3564204Z    Compiling generic-array v0.14.7
+verify	Run make setup lint test	2026-10-23T06:08:45.4453870Z     Checking cfg-if v1.0.5
+verify	Run make setup lint test	2026-10-23T06:08:45.4629605Z    Compiling semver v1.0.28
+verify	Run make setup lint test	2026-10-23T06:08:45.6817933Z    Compiling zerocopy v0.8.63
+verify	Run make setup lint test	2026-10-23T06:08:46.0018265Z    Compiling rustc_version v0.4.1
+verify	Run make setup lint test	2026-10-23T06:08:46.1258038Z    Compiling syn v2.0.119
+verify	Run make setup lint test	2026-10-23T06:08:46.2108189Z    Compiling serde_core v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:46.4067899Z    Compiling curve25519-dalek v4.1.3
+verify	Run make setup lint test	2026-10-23T06:08:46.5248544Z     Checking getrandom v0.2.17
+verify	Run make setup lint test	2026-10-23T06:08:46.6056554Z     Checking rand_core v0.6.4
+verify	Run make setup lint test	2026-10-23T06:08:46.6073633Z     Checking block-buffer v0.10.4
+verify	Run make setup lint test	2026-10-23T06:08:46.6698118Z     Checking crypto-common v0.1.7
+verify	Run make setup lint test	2026-10-23T06:08:46.7057924Z     Checking cpufeatures v0.2.17
+verify	Run make setup lint test	2026-10-23T06:08:46.7154029Z     Checking digest v0.10.7
+verify	Run make setup lint test	2026-10-23T06:08:46.8327870Z     Checking subtle v2.6.1
+verify	Run make setup lint test	2026-10-23T06:08:46.9088071Z     Checking signature v2.2.0
+verify	Run make setup lint test	2026-10-23T06:08:46.9477791Z    Compiling serde_json v1.0.145
+verify	Run make setup lint test	2026-10-23T06:08:47.0477844Z     Checking zeroize v1.9.1
+verify	Run make setup lint test	2026-10-23T06:08:47.1317863Z    Compiling serde v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:47.3158087Z     Checking ed25519 v2.2.3
+verify	Run make setup lint test	2026-10-23T06:08:47.3688252Z     Checking sha2 v0.10.9
+verify	Run make setup lint test	2026-10-23T06:08:47.5751191Z     Checking ascii v1.1.0
+verify	Run make setup lint test	2026-10-23T06:08:47.7718057Z     Checking log v0.4.34
+verify	Run make setup lint test	2026-10-23T06:08:47.8578509Z     Checking httpdate v1.0.3
+verify	Run make setup lint test	2026-10-23T06:08:47.9323889Z     Checking chunked_transfer v1.5.0
+verify	Run make setup lint test	2026-10-23T06:08:47.9880905Z     Checking itoa v1.0.18
+verify	Run make setup lint test	2026-10-23T06:08:48.0738787Z     Checking ryu v1.0.23
+verify	Run make setup lint test	2026-10-23T06:08:48.1521648Z     Checking memchr v2.8.3
+verify	Run make setup lint test	2026-10-23T06:08:48.5878173Z     Checking tiny_http v0.12.0
+verify	Run make setup lint test	2026-10-23T06:08:48.8247994Z     Checking fs2 v0.4.3
+verify	Run make setup lint test	2026-10-23T06:08:48.8728055Z     Checking hex v0.4.3
+verify	Run make setup lint test	2026-10-23T06:08:49.5589100Z    Compiling curve25519-dalek-derive v0.1.1
+verify	Run make setup lint test	2026-10-23T06:08:49.5608644Z    Compiling serde_derive v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:50.3561293Z     Checking ppv-lite86 v0.2.21
+verify	Run make setup lint test	2026-10-23T06:08:50.5402243Z     Checking rand_chacha v0.3.1
+verify	Run make setup lint test	2026-10-23T06:08:50.6301022Z     Checking rand v0.8.8
+verify	Run make setup lint test	2026-10-23T06:08:50.7193561Z     Checking ed25519-dalek v2.2.0
+verify	Run make setup lint test	2026-10-23T06:08:51.8320672Z     Checking seal-log v0.1.0 (/home/runner/work/seal/seal)
+verify	Run make setup lint test	2026-10-23T06:08:52.1448635Z     Finished `dev` profile [unoptimized + debuginfo] target(s) in 7.06s
+verify	Run make setup lint test	2026-10-23T06:08:52.1509698Z .venv/bin/ruff check scripts tests
+verify	Run make setup lint test	2026-10-23T06:08:52.1585914Z All checks passed!
+verify	Run make setup lint test	2026-10-23T06:08:52.1592684Z .venv/bin/ruff format --check scripts tests
+verify	Run make setup lint test	2026-10-23T06:08:52.1664670Z 5 files already formatted
+verify	Run make setup lint test	2026-10-23T06:08:52.1671152Z node --check web/app.js
+verify	Run make setup lint test	2026-10-23T06:08:52.1924552Z ./scripts/cargo.sh build --release --locked
+verify	Run make setup lint test	2026-10-23T06:08:52.2754233Z    Compiling proc-macro2 v1.0.107
+verify	Run make setup lint test	2026-10-23T06:08:52.2755156Z    Compiling version_check v0.9.5
+verify	Run make setup lint test	2026-10-23T06:08:52.2756541Z    Compiling quote v1.0.47
+verify	Run make setup lint test	2026-10-23T06:08:52.2757467Z    Compiling libc v0.2.191
+verify	Run make setup lint test	2026-10-23T06:08:52.4177042Z    Compiling unicode-ident v1.0.27
+verify	Run make setup lint test	2026-10-23T06:08:52.4602927Z    Compiling generic-array v0.14.7
+verify	Run make setup lint test	2026-10-23T06:08:52.4925395Z    Compiling typenum v1.20.1
+verify	Run make setup lint test	2026-10-23T06:08:52.5419032Z    Compiling cfg-if v1.0.5
+verify	Run make setup lint test	2026-10-23T06:08:52.5677979Z    Compiling semver v1.0.28
+verify	Run make setup lint test	2026-10-23T06:08:52.7808091Z    Compiling zerocopy v0.8.63
+verify	Run make setup lint test	2026-10-23T06:08:53.1498103Z    Compiling syn v2.0.119
+verify	Run make setup lint test	2026-10-23T06:08:53.2068309Z    Compiling rustc_version v0.4.1
+verify	Run make setup lint test	2026-10-23T06:08:53.4087948Z    Compiling serde_core v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:53.5657840Z    Compiling curve25519-dalek v4.1.3
+verify	Run make setup lint test	2026-10-23T06:08:53.7928094Z    Compiling getrandom v0.2.17
+verify	Run make setup lint test	2026-10-23T06:08:53.9638015Z    Compiling crypto-common v0.1.7
+verify	Run make setup lint test	2026-10-23T06:08:53.9720076Z    Compiling block-buffer v0.10.4
+verify	Run make setup lint test	2026-10-23T06:08:54.0362891Z    Compiling digest v0.10.7
+verify	Run make setup lint test	2026-10-23T06:08:54.0568535Z    Compiling rand_core v0.6.4
+verify	Run make setup lint test	2026-10-23T06:08:54.1918098Z    Compiling cpufeatures v0.2.17
+verify	Run make setup lint test	2026-10-23T06:08:54.2494877Z    Compiling signature v2.2.0
+verify	Run make setup lint test	2026-10-23T06:08:54.3185994Z    Compiling zeroize v1.9.1
+verify	Run make setup lint test	2026-10-23T06:08:54.4498076Z    Compiling serde v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:54.5888314Z    Compiling serde_json v1.0.145
+verify	Run make setup lint test	2026-10-23T06:08:54.6720014Z    Compiling subtle v2.6.1
+verify	Run make setup lint test	2026-10-23T06:08:54.7884262Z    Compiling ed25519 v2.2.3
+verify	Run make setup lint test	2026-10-23T06:08:54.9415868Z    Compiling sha2 v0.10.9
+verify	Run make setup lint test	2026-10-23T06:08:56.9797977Z    Compiling itoa v1.0.18
+verify	Run make setup lint test	2026-10-23T06:08:57.0868258Z    Compiling curve25519-dalek-derive v0.1.1
+verify	Run make setup lint test	2026-10-23T06:08:57.1722114Z    Compiling serde_derive v1.0.228
+verify	Run make setup lint test	2026-10-23T06:08:57.7068037Z    Compiling ryu v1.0.23
+verify	Run make setup lint test	2026-10-23T06:08:57.9798033Z    Compiling ascii v1.1.0
+verify	Run make setup lint test	2026-10-23T06:08:58.4637953Z    Compiling memchr v2.8.3
+verify	Run make setup lint test	2026-10-23T06:08:58.8831273Z    Compiling ppv-lite86 v0.2.21
+verify	Run make setup lint test	2026-10-23T06:08:59.2568110Z    Compiling rand_chacha v0.3.1
+verify	Run make setup lint test	2026-10-23T06:08:59.7858291Z    Compiling log v0.4.34
+verify	Run make setup lint test	2026-10-23T06:08:59.8852556Z    Compiling httpdate v1.0.3
+verify	Run make setup lint test	2026-10-23T06:08:59.9578046Z    Compiling chunked_transfer v1.5.0
+verify	Run make setup lint test	2026-10-23T06:09:00.0396309Z    Compiling tiny_http v0.12.0
+verify	Run make setup lint test	2026-10-23T06:09:00.2229703Z    Compiling rand v0.8.8
+verify	Run make setup lint test	2026-10-23T06:09:01.1195139Z    Compiling ed25519-dalek v2.2.0
+verify	Run make setup lint test	2026-10-23T06:09:01.1289613Z    Compiling fs2 v0.4.3
+verify	Run make setup lint test	2026-10-23T06:09:01.2403603Z    Compiling hex v0.4.3
+verify	Run make setup lint test	2026-10-23T06:09:02.8359464Z    Compiling seal-log v0.1.0 (/home/runner/work/seal/seal)
+verify	Run make setup lint test	2026-10-23T06:09:05.4778496Z     Finished `release` profile [optimized] target(s) in 13.25s
+verify	Run make setup lint test	2026-10-23T06:09:05.4830241Z ./scripts/cargo.sh test --locked
+verify	Run make setup lint test	2026-10-23T06:09:05.5429351Z    Compiling typenum v1.20.1
+verify	Run make setup lint test	2026-10-23T06:09:05.5430087Z    Compiling cfg-if v1.0.5
+verify	Run make setup lint test	2026-10-23T06:09:05.5430640Z    Compiling libc v0.2.191
+verify	Run make setup lint test	2026-10-23T06:09:05.5431182Z    Compiling zerocopy v0.8.63
+verify	Run make setup lint test	2026-10-23T06:09:05.5681787Z    Compiling cpufeatures v0.2.17
+verify	Run make setup lint test	2026-10-23T06:09:05.5962323Z    Compiling serde_core v1.0.228
+verify	Run make setup lint test	2026-10-23T06:09:06.2997949Z    Compiling generic-array v0.14.7
+verify	Run make setup lint test	2026-10-23T06:09:06.7337382Z    Compiling getrandom v0.2.17
+verify	Run make setup lint test	2026-10-23T06:09:06.8843841Z    Compiling block-buffer v0.10.4
+verify	Run make setup lint test	2026-10-23T06:09:06.8878519Z    Compiling crypto-common v0.1.7
+verify	Run make setup lint test	2026-10-23T06:09:06.9427926Z    Compiling rand_core v0.6.4
+verify	Run make setup lint test	2026-10-23T06:09:06.9638181Z    Compiling digest v0.10.7
+verify	Run make setup lint test	2026-10-23T06:09:07.0948020Z    Compiling zeroize v1.9.1
+verify	Run make setup lint test	2026-10-23T06:09:07.1033058Z    Compiling subtle v2.6.1
+verify	Run make setup lint test	2026-10-23T06:09:07.1887337Z    Compiling signature v2.2.0
+verify	Run make setup lint test	2026-10-23T06:09:07.2089527Z    Compiling curve25519-dalek v4.1.3
+verify	Run make setup lint test	2026-10-23T06:09:07.2517265Z    Compiling ed25519 v2.2.3
+verify	Run make setup lint test	2026-10-23T06:09:07.3688081Z    Compiling sha2 v0.10.9
+verify	Run make setup lint test	2026-10-23T06:09:07.7481234Z    Compiling httpdate v1.0.3
+verify	Run make setup lint test	2026-10-23T06:09:07.9128087Z    Compiling chunked_transfer v1.5.0
+verify	Run make setup lint test	2026-10-23T06:09:07.9808049Z    Compiling itoa v1.0.18
+verify	Run make setup lint test	2026-10-23T06:09:08.1028053Z    Compiling ascii v1.1.0
+verify	Run make setup lint test	2026-10-23T06:09:08.1169657Z    Compiling ryu v1.0.23
+verify	Run make setup lint test	2026-10-23T06:09:08.2445735Z    Compiling memchr v2.8.3
+verify	Run make setup lint test	2026-10-23T06:09:08.4440728Z    Compiling log v0.4.34
+verify	Run make setup lint test	2026-10-23T06:09:08.5718000Z    Compiling tiny_http v0.12.0
+verify	Run make setup lint test	2026-10-23T06:09:08.6708915Z    Compiling ed25519-dalek v2.2.0
+verify	Run make setup lint test	2026-10-23T06:09:08.8767993Z    Compiling serde_json v1.0.145
+verify	Run make setup lint test	2026-10-23T06:09:08.9687887Z    Compiling serde v1.0.228
+verify	Run make setup lint test	2026-10-23T06:09:09.5578462Z    Compiling fs2 v0.4.3
+verify	Run make setup lint test	2026-10-23T06:09:09.6508594Z    Compiling hex v0.4.3
+verify	Run make setup lint test	2026-10-23T06:09:09.8849002Z    Compiling ppv-lite86 v0.2.21
+verify	Run make setup lint test	2026-10-23T06:09:10.1542999Z    Compiling rand_chacha v0.3.1
+verify	Run make setup lint test	2026-10-23T06:09:10.2593765Z    Compiling rand v0.8.8
+verify	Run make setup lint test	2026-10-23T06:09:10.6630276Z    Compiling seal-log v0.1.0 (/home/runner/work/seal/seal)
+verify	Run make setup lint test	2026-10-23T06:09:11.5543196Z     Finished `test` profile [unoptimized + debuginfo] target(s) in 6.04s
+verify	Run make setup lint test	2026-10-23T06:09:11.5570551Z      Running unittests src/lib.rs (target/debug/deps/seal_log-f7cbcb0f5cb1d294)
+verify	Run make setup lint test	2026-10-23T06:09:11.5581844Z 
+verify	Run make setup lint test	2026-10-23T06:09:11.5582073Z running 0 tests
+verify	Run make setup lint test	2026-10-23T06:09:11.5582296Z 
+verify	Run make setup lint test	2026-10-23T06:09:11.5582754Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+verify	Run make setup lint test	2026-10-23T06:09:11.5583405Z 
+verify	Run make setup lint test	2026-10-23T06:09:11.5585621Z      Running unittests src/main.rs (target/debug/deps/seal-f789e865763dae23)
+verify	Run make setup lint test	2026-10-23T06:09:11.5596188Z 
+verify	Run make setup lint test	2026-10-23T06:09:11.5596516Z running 0 tests
+verify	Run make setup lint test	2026-10-23T06:09:11.5597016Z 
+verify	Run make setup lint test	2026-10-23T06:09:11.5597605Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+verify	Run make setup lint test	2026-10-23T06:09:11.5597992Z 
+verify	Run make setup lint test	2026-10-23T06:09:11.5598238Z      Running tests/core.rs (target/debug/deps/core-f1fbd2926c318c01)
+verify	Run make setup lint test	2026-10-23T06:09:11.5607956Z 
+verify	Run make setup lint test	2026-10-23T06:09:11.5608178Z running 5 tests
+verify	Run make setup lint test	2026-10-23T06:09:11.5637697Z test payload_limits_and_canonical_hex ... ok
+verify	Run make setup lint test	2026-10-23T06:09:11.6477927Z test signed_bundles_trust_anchor_and_malformed_bounds ... ok
+verify	Run make setup lint test	2026-10-23T06:09:11.7382667Z test independent_reference_tree_matches ... ok
+verify	Run make setup lint test	2026-10-23T06:09:11.7510229Z test empty_and_chain_mutations ... ok
+verify	Run make setup lint test	2026-10-23T06:09:16.0732263Z test every_small_tree_inclusion_and_consistency ... ok
+verify	Run make setup lint test	2026-10-23T06:09:16.0733000Z 
+verify	Run make setup lint test	2026-10-23T06:09:16.0733816Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.51s
+verify	Run make setup lint test	2026-10-23T06:09:16.0734478Z 
+verify	Run make setup lint test	2026-10-23T06:09:16.0735071Z    Doc-tests seal_log
+verify	Run make setup lint test	2026-10-23T06:09:16.1109047Z 
+verify	Run make setup lint test	2026-10-23T06:09:16.1109600Z running 0 tests
+verify	Run make setup lint test	2026-10-23T06:09:16.1109934Z 
+verify	Run make setup lint test	2026-10-23T06:09:16.1110593Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+verify	Run make setup lint test	2026-10-23T06:09:16.1111704Z 
+verify	Run make setup lint test	2026-10-23T06:09:16.1151762Z .venv/bin/python -m pytest -q tests/cli_test.py
+verify	Run make setup lint test	2026-10-23T06:09:17.2005150Z .....                                                                    [100%]
+verify	Run make setup lint test	2026-10-23T06:09:17.2005815Z 5 passed in 0.16s
+verify	Run cargo install cargo-audit --locked --version 0.22.2	﻿2026-10-23T06:09:17.2317744Z ##[group]Run cargo install cargo-audit --locked --version 0.22.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2318275Z ^[[36;1mcargo install cargo-audit --locked --version 0.22.2^[[0m
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2381639Z shell: /usr/bin/bash -e {0}
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2381898Z env:
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2382169Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2382625Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2383058Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2383436Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2383817Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2384214Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2384533Z ##[endgroup]
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.2907055Z     Updating crates.io index
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.3220596Z  Downloading crates ...
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.3588942Z   Downloaded cargo-audit v0.22.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.3816709Z   Installing cargo-audit v0.22.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.3817848Z warning: default toolchain implicitly overridden with `1.99.1-x86_64-unknown-linux-gnu` by rustup toolchain file
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.3818378Z   |
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.3818784Z   = help: use `cargo +stable install` if you meant to use the stable toolchain
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.3819527Z   = note: rustup selects the toolchain based on the parent environment and not the environment of the package being installed
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.3870080Z     Updating crates.io index
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:17.9234512Z     Updating crates.io index
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0240225Z  Downloading crates ...
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0401675Z   Downloaded abscissa_derive v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0480678Z   Downloaded auditable-info v0.10.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0489762Z   Downloaded cfg-if v1.0.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0530517Z   Downloaded gix-quote v0.7.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0541826Z   Downloaded gix-ignore v0.21.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0558445Z   Downloaded gix-validate v0.11.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0571577Z   Downloaded indenter v0.3.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0583962Z   Downloaded kstring v2.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0599249Z   Downloaded gix-negotiate v0.32.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0610307Z   Downloaded gix-object v0.61.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0642047Z   Downloaded gix-odb v0.81.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0674085Z   Downloaded potential_utf v0.1.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0688587Z   Downloaded adler2 v2.0.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0704398Z   Downloaded errno v0.3.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0722933Z   Downloaded futures-sink v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0733465Z   Downloaded gix-pack v0.71.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0805756Z   Downloaded log v0.4.29
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0831758Z   Downloaded prodash v31.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0871850Z   Downloaded colorchoice v1.0.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0882631Z   Downloaded anstyle v1.0.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0898714Z   Downloaded clru v0.6.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0913056Z   Downloaded fs-err v3.3.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0934444Z   Downloaded deranged v0.5.8
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0950994Z   Downloaded abscissa_core v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.0995366Z   Downloaded crc32fast v1.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1017631Z   Downloaded fixedbitset v0.5.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1037981Z   Downloaded gix-bitmap v0.3.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1048902Z   Downloaded gix-prompt v0.15.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1061555Z   Downloaded gix-worktree v0.53.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1086419Z   Downloaded addr2line v0.25.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1115183Z   Downloaded crossbeam-epoch v0.9.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1155555Z   Downloaded fastrand v2.4.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1180344Z   Downloaded gix-commitgraph v0.37.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1208712Z   Downloaded gix-glob v0.26.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1234762Z   Downloaded gix-refspec v0.42.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1266680Z   Downloaded cargo-lock v11.0.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1336276Z   Downloaded futures-core v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1363588Z   Downloaded futures-task v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1388127Z   Downloaded gix-actor v0.41.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1414330Z   Downloaded hashbrown v0.16.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1494695Z   Downloaded ipnet v2.12.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1516593Z   Downloaded gix-shallow v0.12.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1532213Z   Downloaded http v1.4.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1576697Z   Downloaded displaydoc v0.2.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1618708Z   Downloaded form_urlencoded v1.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1626715Z   Downloaded futures-channel v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1648569Z   Downloaded gix-features v0.48.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1691018Z   Downloaded allocator-api2 v0.2.21
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1715550Z   Downloaded getrandom v0.3.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1749156Z   Downloaded gix-discover v0.52.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1763782Z   Downloaded jiff-static v0.2.28
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1788573Z   Downloaded zmij v1.0.21
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1804867Z   Downloaded find-msvc-tools v0.1.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1819818Z   Downloaded gix-fs v0.21.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1834534Z   Downloaded gix-pathspec v0.18.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1848584Z   Downloaded ident_case v1.0.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1856121Z   Downloaded hyper-rustls v0.27.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1869507Z   Downloaded io-close v0.3.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1879006Z   Downloaded gix-diff v0.64.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1906003Z   Downloaded gix-error v0.2.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1921402Z   Downloaded gix-hash v0.25.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1934816Z   Downloaded heapless v0.8.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.1970514Z   Downloaded borsh v1.6.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2036899Z   Downloaded filetime v0.2.28
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2052238Z   Downloaded gix-chunk v0.7.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2062913Z   Downloaded gix-sec v0.14.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2073648Z   Downloaded gix-utils v0.3.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2084215Z   Downloaded gix-worktree-state v0.31.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2097194Z   Downloaded hash32 v0.3.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2110643Z   Downloaded anstyle-query v1.1.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2121455Z   Downloaded bytes v1.11.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2160176Z   Downloaded fnv v1.0.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2168284Z   Downloaded gix-config-value v0.18.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2179889Z   Downloaded home v0.5.12
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2189383Z   Downloaded gix-url v0.36.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2202668Z   Downloaded http-body v1.0.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2211509Z   Downloaded eyre v0.6.12
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2242954Z   Downloaded faster-hex v0.10.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2257378Z   Downloaded gix-packetline v0.21.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2274597Z   Downloaded rustc-hash v2.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2287235Z   Downloaded canonical-path v2.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2297874Z   Downloaded icu_collections v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2352059Z   Downloaded idna_adapter v1.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2360620Z   Downloaded lazy_static v1.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2377368Z   Downloaded quitters v0.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2384577Z   Downloaded nonempty v0.12.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2395358Z   Downloaded percent-encoding v2.3.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2403719Z   Downloaded gix-attributes v0.33.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2418861Z   Downloaded gix-credentials v0.38.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2434461Z   Downloaded tracing-attributes v0.1.31
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2459590Z   Downloaded walkdir v2.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2476275Z   Downloaded arc-swap v1.9.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2513929Z   Downloaded heck v0.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2526009Z   Downloaded http-body-util v0.1.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2542847Z   Downloaded lock_api v0.4.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2554738Z   Downloaded num-conv v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2562602Z   Downloaded cfg_aliases v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2572903Z   Downloaded sync_wrapper v1.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2580996Z   Downloaded wait-timeout v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2595067Z   Downloaded foldhash v0.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2606715Z   Downloaded matchers v0.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2617120Z   Downloaded gix-revwalk v0.32.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2628909Z   Downloaded atomic-waker v1.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2641606Z   Downloaded clap_lex v1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2657768Z   Downloaded dunce v1.0.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2667427Z   Downloaded gix-command v0.9.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2680315Z   Downloaded gix-revision v0.46.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2704384Z   Downloaded mime v0.3.17
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2721680Z   Downloaded gix-traverse v0.58.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2738583Z   Downloaded is_terminal_polyfill v1.70.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2747553Z   Downloaded jobserver v0.1.34
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2766227Z   Downloaded openssl-probe v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2777372Z   Downloaded powerfmt v0.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2787552Z   Downloaded tower-layer v0.3.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2796055Z   Downloaded gix-trace v0.1.20
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2805873Z   Downloaded parking_lot v0.12.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2829591Z   Downloaded compression-core v0.4.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2839394Z   Downloaded futures-io v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2847253Z   Downloaded gix-date v0.15.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2862337Z   Downloaded httparse v1.10.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2885675Z   Downloaded nu-ansi-term v0.50.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2908173Z   Downloaded rustls-native-certs v0.8.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2930763Z   Downloaded twox-hash v2.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2951807Z   Downloaded utf8_iter v1.0.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2961509Z   Downloaded yoke-derive v0.8.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.2972461Z   Downloaded async-compression v0.4.42
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3038684Z   Downloaded owo-colors v4.3.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3056688Z   Downloaded simd-adler32 v0.3.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3073958Z   Downloaded gix-submodule v0.31.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3085805Z   Downloaded lru-slab v0.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3093797Z   Downloaded pin-project-lite v0.2.17
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3148128Z   Downloaded slab v0.4.12
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3159900Z   Downloaded platforms v3.10.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3177909Z   Downloaded gix-tempfile v23.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3190079Z   Downloaded quinn-udp v0.5.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3206277Z   Downloaded rand_chacha v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3217243Z   Downloaded rustc-demangle v0.1.27
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3232717Z   Downloaded shell-words v1.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3241373Z   Downloaded thread_local v1.1.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3254931Z   Downloaded fs_extra v1.3.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3270025Z   Downloaded gix-hashtable v0.15.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3278531Z   Downloaded icu_normalizer v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3310860Z   Downloaded once_cell v1.21.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3334052Z   Downloaded gix-worktree-stream v0.33.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3346086Z   Downloaded hashbrown v0.17.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3395198Z   Downloaded icu_properties v2.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3415245Z   Downloaded icu_provider v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3438662Z   Downloaded gix-transport v0.57.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3473392Z   Downloaded sha1 v0.10.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3489074Z   Downloaded display-error-chain v0.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3499211Z   Downloaded equivalent v1.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3508164Z   Downloaded time-core v0.1.8
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3518423Z   Downloaded icu_normalizer_data v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3537755Z   Downloaded shlex v1.3.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3549267Z   Downloaded toml-span v0.7.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3563851Z   Downloaded thiserror v2.0.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3623692Z   Downloaded auditable-extract v0.3.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3631058Z   Downloaded auditable-serde v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3638480Z   Downloaded camino v1.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3656450Z   Downloaded gix-path v0.12.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3673121Z   Downloaded gix-protocol v0.62.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3701857Z   Downloaded gix-ref v0.64.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3742690Z   Downloaded memmap2 v0.9.10
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3758410Z   Downloaded maybe-async v0.2.10
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3784648Z   Downloaded quote v1.0.45
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3809712Z   Downloaded thiserror-impl v2.0.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3822975Z   Downloaded foldhash v0.1.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3834171Z   Downloaded stable_deref_trait v1.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3842158Z   Downloaded toml_datetime v1.1.1+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3853890Z   Downloaded try-lock v0.2.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3862198Z   Downloaded sharded-slab v0.1.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3893052Z   Downloaded strsim v0.11.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3905199Z   Downloaded uluru v3.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3912890Z   Downloaded cmake v0.1.58
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3925194Z   Downloaded proc-macro2 v1.0.106
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3952413Z   Downloaded unicode-ident v1.0.24
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.3978134Z   Downloaded icu_locale_core v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4040368Z   Downloaded mio v1.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4095456Z   Downloaded parking_lot_core v0.9.12
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4115189Z   Downloaded rustls-webpki v0.103.13
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4144060Z   Downloaded rustsec v0.33.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4190554Z   Downloaded secrecy v0.10.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4198660Z   Downloaded tame-index v0.26.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4238715Z   Downloaded tinyvec_macros v0.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4245777Z   Downloaded utf8parse v0.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4254849Z   Downloaded zerovec-derive v0.11.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4268889Z   Downloaded rustls-platform-verifier v0.7.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4304900Z   Downloaded same-file v1.0.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4317335Z   Downloaded serde_spanned v1.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4328134Z   Downloaded time-macros v0.2.27
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4348546Z   Downloaded untrusted v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4363603Z   Downloaded want v0.3.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4371962Z   Downloaded zerofrom-derive v0.1.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4381312Z   Downloaded gix-lock v23.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4391997Z   Downloaded idna v1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4425606Z   Downloaded indexmap v2.14.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4465096Z   Downloaded litemap v0.8.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4486135Z   Downloaded memchr v2.8.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4536323Z   Downloaded miniz_oxide v0.8.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4559370Z   Downloaded toml_datetime v0.7.5+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4570949Z   Downloaded anstream v1.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4589318Z   Downloaded autocfg v1.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4606756Z   Downloaded binfarce v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4622451Z   Downloaded byteorder v1.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4637005Z   Downloaded rustversion v1.0.22
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4662771Z   Downloaded static_assertions v1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4675783Z   Downloaded tokio-rustls v0.26.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4694840Z   Downloaded tower-service v0.3.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4702139Z   Downloaded getrandom v0.4.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4738127Z   Downloaded hyper-util v0.1.20
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4795080Z   Downloaded quinn v0.11.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4824708Z   Downloaded scopeguard v1.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4835605Z   Downloaded toml v0.9.12+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4874363Z   Downloaded toml v1.1.2+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4915027Z   Downloaded toml_parser v1.1.2+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4938959Z   Downloaded tracing-core v0.1.36
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4963988Z   Downloaded anstyle-parse v1.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.4979992Z   Downloaded arrayvec v0.7.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5000241Z   Downloaded bitflags v2.11.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5040641Z   Downloaded hyper v1.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5103662Z   Downloaded rand v0.9.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5140547Z   Downloaded rayon-core v1.13.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5174948Z   Downloaded smallvec v1.15.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5194333Z   Downloaded unicode-bom v2.0.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5206156Z   Downloaded zerofrom v0.1.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5214841Z   Downloaded hashbrown v0.15.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5261346Z   Downloaded icu_properties_data v2.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5358347Z   Downloaded topological-sort v0.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5368210Z   Downloaded compression-codecs v0.4.38
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5404522Z   Downloaded crossbeam-deque v0.8.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5417159Z   Downloaded rand_core v0.9.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5429413Z   Downloaded h2 v0.4.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5489705Z   Downloaded termcolor v1.4.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5507569Z   Downloaded zerovec v0.11.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5557228Z   Downloaded cvss v2.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5606375Z   Downloaded either v1.15.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5623943Z   Downloaded rustc-stable-hash v0.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5638860Z   Downloaded synstructure v0.13.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5647981Z   Downloaded tinystr v0.8.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5666581Z   Downloaded tokio-util v0.7.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5737666Z   Downloaded quinn-proto v0.11.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5801316Z   Downloaded tinyvec v1.11.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5825444Z   Downloaded toml_writer v1.1.1+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5838406Z   Downloaded tower-http v0.6.10
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.5922734Z   Downloaded clap v4.6.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6011674Z   Downloaded gix-filter v0.31.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6035126Z   Downloaded reqwest v0.13.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6085540Z   Downloaded zeroize v1.8.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6097458Z   Downloaded clap_derive v4.6.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6117474Z   Downloaded rustls-pki-types v1.14.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6140551Z   Downloaded writeable v0.6.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6158350Z   Downloaded yoke v0.8.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6174897Z   Downloaded crossbeam-utils v0.8.21
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6199671Z   Downloaded smol_str v0.3.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6213572Z   Downloaded tempfile v3.27.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6236654Z   Downloaded base64 v0.22.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6272751Z   Downloaded crossbeam-channel v0.5.15
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6310103Z   Downloaded tracing-log v0.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6322308Z   Downloaded clap_builder v4.6.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6382334Z   Downloaded gix-index v0.52.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6416861Z   Downloaded aho-corasick v1.1.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6465502Z   Downloaded object v0.37.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6567111Z   Downloaded gix-config v0.57.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6608592Z   Downloaded rustls v0.23.40
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6718797Z   Downloaded socket2 v0.6.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6735807Z   Downloaded backtrace v0.3.76
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6782675Z   Downloaded flate2 v1.1.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6828556Z   Downloaded object v0.39.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.6936507Z   Downloaded tracing v0.1.44
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7088391Z   Downloaded url v2.5.8
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7112566Z   Downloaded zerotrie v0.2.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7148962Z   Downloaded cc v1.2.62
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7176316Z   Downloaded tower v0.5.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7270483Z   Downloaded typenum v1.20.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7303557Z   Downloaded aws-lc-rs v1.16.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7402558Z   Downloaded futures-util v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7526411Z   Downloaded serde_json v1.0.149
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7594999Z   Downloaded regex-automata v0.4.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7725847Z   Downloaded jiff v0.2.28
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.7886354Z   Downloaded libc v0.2.186
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8252087Z   Downloaded unicode-normalization v0.1.25
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8284623Z   Downloaded winnow v1.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8374652Z   Downloaded wasmparser v0.207.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8433159Z   Downloaded regex v1.12.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8482672Z   Downloaded petgraph v0.8.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8686269Z   Downloaded rayon v1.12.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8774810Z   Downloaded winnow v0.7.15
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8865020Z   Downloaded zlib-rs v0.6.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.8914585Z   Downloaded gix v0.84.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.9066138Z   Downloaded tracing-subscriber v0.3.23
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.9144039Z   Downloaded gimli v0.32.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.9210240Z   Downloaded time v0.3.47
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.9331208Z   Downloaded wasmparser v0.247.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.9409070Z   Downloaded zerocopy v0.8.48
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.9616247Z   Downloaded bstr v1.12.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.9690681Z   Downloaded syn v2.0.117
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:18.9790361Z   Downloaded tokio v1.52.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.0210457Z   Downloaded regex-syntax v0.8.10
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.0274230Z   Downloaded rustix v1.1.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.0526951Z   Downloaded color-eyre v0.6.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.0594635Z   Downloaded sha1-checked v0.10.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.0649511Z   Downloaded ring v0.17.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.1046377Z   Downloaded encoding_rs v0.8.35
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.1236207Z   Downloaded linux-raw-sys v0.12.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.1858701Z   Downloaded aws-lc-sys v0.40.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.4772147Z    Compiling proc-macro2 v1.0.106
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.4772946Z    Compiling quote v1.0.45
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.4774600Z    Compiling unicode-ident v1.0.24
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.4775106Z    Compiling libc v0.2.186
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.5446413Z    Compiling memchr v2.8.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.6477644Z    Compiling cfg-if v1.0.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:19.6847991Z    Compiling regex-syntax v0.8.10
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:20.4998015Z    Compiling syn v2.0.117
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:20.7627965Z    Compiling aho-corasick v1.1.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:20.8287934Z    Compiling smallvec v1.15.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:21.0417901Z    Compiling once_cell v1.21.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:21.2208024Z    Compiling bytes v1.11.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:22.1508435Z    Compiling regex-automata v0.4.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:25.9123153Z    Compiling bstr v1.12.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:27.2578101Z    Compiling stable_deref_trait v1.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:27.2978422Z    Compiling thiserror v2.0.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:27.5277995Z    Compiling thiserror-impl v2.0.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:27.5568072Z    Compiling crc32fast v1.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:27.6920402Z    Compiling crossbeam-utils v0.8.21
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:27.8858466Z    Compiling tinyvec_macros v0.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:27.9218492Z    Compiling gix-trace v0.1.20
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:27.9908106Z    Compiling tinyvec v1.11.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:28.4788080Z    Compiling gix-validate v0.11.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:28.6403963Z    Compiling parking_lot_core v0.9.12
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:28.7558302Z    Compiling fastrand v2.4.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:28.9678074Z    Compiling bitflags v2.11.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:28.9898052Z    Compiling gix-path v0.12.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:28.9955409Z    Compiling unicode-normalization v0.1.25
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:29.3116132Z    Compiling scopeguard v1.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:29.3667948Z    Compiling itoa v1.0.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:29.5427869Z    Compiling gix-utils v0.3.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:29.5738134Z    Compiling lock_api v0.4.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:29.7847816Z    Compiling crossbeam-channel v0.5.15
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:29.9110088Z    Compiling parking_lot v0.12.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:30.4587953Z    Compiling foldhash v0.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:30.4668130Z    Compiling equivalent v1.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:30.5088136Z    Compiling allocator-api2 v0.2.21
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:30.6403683Z    Compiling same-file v1.0.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:30.7388002Z    Compiling walkdir v2.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:30.8377214Z    Compiling prodash v31.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:30.8878215Z    Compiling zlib-rs v0.6.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:31.4428141Z    Compiling gix-error v0.2.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:31.8260621Z    Compiling version_check v0.9.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:32.0387905Z    Compiling generic-array v0.14.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:32.1198126Z    Compiling hashbrown v0.17.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:32.7988319Z    Compiling typenum v1.20.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:32.9048005Z    Compiling byteorder v1.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:33.0578358Z    Compiling serde_core v1.0.228
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:33.2047806Z    Compiling heapless v0.8.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:33.4007797Z    Compiling hash32 v0.3.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:33.9648056Z    Compiling gix-features v0.48.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:34.1818119Z    Compiling block-buffer v0.10.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:34.2787978Z    Compiling crypto-common v0.1.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:35.1911050Z    Compiling digest v0.10.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:35.3347955Z    Compiling faster-hex v0.10.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:35.7608073Z    Compiling synstructure v0.13.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:36.2607975Z    Compiling cpufeatures v0.2.17
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:36.2828126Z    Compiling jiff v0.2.28
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:36.3008037Z    Compiling sha1 v0.10.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:36.7417142Z    Compiling sha1-checked v0.10.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:37.0805992Z    Compiling gix-hash v0.25.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:37.5658162Z    Compiling zerofrom-derive v0.1.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:37.6302297Z    Compiling yoke-derive v0.8.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:38.5748335Z    Compiling pin-project-lite v0.2.17
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:38.6318816Z    Compiling rustix v1.1.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:38.6406386Z    Compiling zerofrom v0.1.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:38.7288604Z    Compiling yoke v0.8.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:38.9138209Z    Compiling gix-hashtable v0.15.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:38.9868043Z    Compiling linux-raw-sys v0.12.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:39.8728089Z    Compiling jobserver v0.1.34
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:40.1588223Z    Compiling zerovec-derive v0.11.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:40.1677662Z    Compiling shlex v1.3.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:40.2828435Z    Compiling find-msvc-tools v0.1.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:40.4607994Z    Compiling gix-date v0.15.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:41.1437928Z    Compiling gix-actor v0.41.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:41.5468191Z    Compiling gix-object v0.61.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:42.9747871Z    Compiling zerovec v0.11.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:43.1318024Z    Compiling cc v1.2.62
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:43.6548423Z    Compiling displaydoc v0.2.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.1294082Z    Compiling memmap2 v0.9.10
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.3599625Z    Compiling getrandom v0.4.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.4408036Z    Compiling serde v1.0.228
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.4928010Z    Compiling cmake v0.1.58
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.6098212Z    Compiling serde_derive v1.0.228
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.6558035Z    Compiling dunce v1.0.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.7098078Z    Compiling fs_extra v1.3.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.7888407Z    Compiling futures-core v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:44.9088079Z    Compiling aws-lc-sys v0.40.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:45.0198335Z    Compiling socket2 v0.6.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:45.6718331Z    Compiling mio v1.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:45.9823473Z    Compiling zeroize v1.8.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:46.1288009Z    Compiling tokio v1.52.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:48.2482985Z    Compiling tempfile v3.27.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:48.7647376Z    Compiling tinystr v0.8.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:48.8958973Z    Compiling gix-fs v0.21.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:49.0948171Z    Compiling gix-chunk v0.7.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:49.2588406Z    Compiling adler2 v2.0.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:49.3240993Z    Compiling futures-sink v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:49.3758128Z    Compiling writeable v0.6.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:49.4558455Z    Compiling simd-adler32 v0.3.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:49.5267407Z    Compiling litemap v0.8.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:49.6459369Z    Compiling percent-encoding v2.3.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:49.8037898Z    Compiling icu_locale_core v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:50.2221974Z    Compiling miniz_oxide v0.8.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:51.8544698Z    Compiling gix-tempfile v23.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:52.0412786Z    Compiling zerotrie v0.2.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:52.4217907Z    Compiling potential_utf v0.1.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:52.4407954Z    Compiling gix-quote v0.7.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:52.5188211Z    Compiling tracing-core v0.1.36
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:52.7106434Z    Compiling nonempty v0.12.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:52.8388174Z    Compiling icu_properties_data v2.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:52.9138293Z    Compiling aws-lc-rs v1.16.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:53.0513599Z    Compiling icu_normalizer_data v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:53.1608035Z    Compiling icu_collections v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:53.3402908Z    Compiling icu_provider v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:53.6457817Z    Compiling http v1.4.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:53.7993606Z    Compiling tracing-attributes v0.1.31
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:54.8457947Z    Compiling fnv v1.0.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:54.8920118Z    Compiling slab v0.4.12
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:55.0282623Z    Compiling tracing v0.1.44
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:55.4828550Z    Compiling gix-commitgraph v0.37.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:55.6880711Z    Compiling rustls-pki-types v1.14.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:55.7028149Z    Compiling gix-glob v0.26.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:56.4638516Z    Compiling indexmap v2.14.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:56.4798314Z    Compiling gix-revwalk v0.32.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:56.7328257Z    Compiling icu_normalizer v2.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:56.7435618Z    Compiling icu_properties v2.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:57.5062088Z    Compiling http-body v1.0.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:57.5987863Z    Compiling gix-lock v23.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.0717327Z    Compiling tokio-util v0.7.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.1354250Z    Compiling futures-io v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.2737897Z    Compiling untrusted v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.3402519Z    Compiling httparse v1.10.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.3603090Z    Compiling rustls v0.23.40
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.4354626Z    Compiling futures-task v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.4882866Z    Compiling idna_adapter v1.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.5488749Z    Compiling futures-util v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.5620559Z    Compiling atomic-waker v1.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.6197999Z    Compiling utf8_iter v1.0.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.7235934Z    Compiling log v0.4.29
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.8808299Z    Compiling tower-service v0.3.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.9327903Z    Compiling try-lock v0.2.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:58.9762118Z    Compiling subtle v2.6.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:59.0580816Z    Compiling unicode-bom v2.0.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:59.0767436Z    Compiling want v0.3.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:59.1688695Z    Compiling idna v1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:09:59.1788045Z    Compiling h2 v0.4.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:01.5208249Z    Compiling flate2 v1.1.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:01.9323640Z    Compiling form_urlencoded v1.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:01.9997527Z    Compiling futures-channel v0.3.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:02.1198634Z    Compiling gix-config-value v0.18.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:02.2138060Z    Compiling static_assertions v1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:02.2577819Z    Compiling compression-core v0.4.32
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:02.3568005Z    Compiling shell-words v1.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:02.5398935Z    Compiling gix-command v0.9.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:02.8877436Z    Compiling compression-codecs v0.4.38
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:03.0410839Z    Compiling kstring v2.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:03.1625800Z    Compiling hyper v1.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:03.2145765Z    Compiling url v2.5.8
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:05.7548418Z    Compiling sync_wrapper v1.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:05.8077922Z    Compiling gix-sec v0.14.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:05.8138011Z    Compiling encoding_rs v0.8.35
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:06.0765225Z    Compiling base64 v0.22.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:06.5427837Z    Compiling ipnet v2.12.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:06.8198532Z    Compiling tower-layer v0.3.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:06.9908011Z    Compiling openssl-probe v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:07.1638723Z    Compiling rustls-native-certs v0.8.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:07.7227884Z    Compiling tower v0.5.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:07.8449505Z    Compiling hyper-util v0.1.20
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:08.2681242Z    Compiling gix-attributes v0.33.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:10.4378853Z    Compiling async-compression v0.4.42
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:10.6612907Z    Compiling http-body-util v0.1.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:10.8218217Z    Compiling semver v1.0.28
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:10.8555513Z    Compiling rustversion v1.0.22
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:10.8907962Z    Compiling zmij v1.0.21
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:11.0468046Z    Compiling tower-http v0.6.10
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:11.0609137Z    Compiling gix-ref v0.64.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:11.4758173Z    Compiling gix-url v0.36.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:11.6968565Z    Compiling gix-packetline v0.21.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:12.0308434Z    Compiling winnow v1.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:12.4888529Z    Compiling mime v0.3.17
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:12.6818285Z    Compiling serde_json v1.0.149
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:12.7988083Z    Compiling toml_parser v1.1.2+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:13.6348434Z    Compiling gix-prompt v0.15.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:13.9969419Z    Compiling gix-revision v0.46.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:14.1428578Z    Compiling gix-traverse v0.58.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:15.1011285Z    Compiling serde_spanned v1.1.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:15.1888462Z    Compiling gix-bitmap v0.3.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:15.4622114Z    Compiling hashbrown v0.16.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.1209106Z    Compiling crossbeam-epoch v0.9.18
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.3065964Z    Compiling filetime v0.2.28
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.3708182Z    Compiling utf8parse v0.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.4191714Z    Compiling autocfg v1.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.4478044Z    Compiling arrayvec v0.7.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.4588072Z    Compiling toml_writer v1.1.1+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.6378123Z    Compiling object v0.37.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.6477681Z    Compiling rayon-core v1.13.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.7200799Z    Compiling fs-err v3.3.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.7407217Z    Compiling uluru v3.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.7938598Z    Compiling anstyle-parse v1.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.8062050Z    Compiling gix-index v0.52.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.8197752Z    Compiling crossbeam-deque v0.8.6
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.9397849Z    Compiling clru v0.6.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:16.9642781Z    Compiling gix-refspec v0.42.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:17.1648091Z    Compiling gix-credentials v0.38.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:18.9148036Z    Compiling arc-swap v1.9.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:19.1698567Z    Compiling gix-ignore v0.21.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:19.5093953Z    Compiling toml_datetime v0.7.5+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:19.8653010Z    Compiling anstyle v1.0.14
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:20.0534957Z    Compiling owo-colors v4.3.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:20.2019212Z    Compiling eyre v0.6.12
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:20.3208009Z    Compiling anstyle-query v1.1.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:20.3748559Z    Compiling gimli v0.32.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:21.0690183Z    Compiling foldhash v0.1.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:21.3865187Z    Compiling is_terminal_polyfill v1.70.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:21.4437774Z    Compiling colorchoice v1.0.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:21.4968003Z    Compiling camino v1.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:21.6578066Z    Compiling winnow v0.7.15
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:22.2977916Z    Compiling anstream v1.0.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:22.8701902Z    Compiling addr2line v0.25.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:23.2650283Z    Compiling hashbrown v0.15.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:23.5410727Z    Compiling toml v0.9.12+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:23.6678615Z    Compiling gix-worktree v0.53.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:23.9025974Z    Compiling gix-pack v0.71.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:28.1619070Z    Compiling gix-config v0.57.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:28.5147916Z    Compiling gix-filter v0.31.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:30.8218069Z    Compiling gix-pathspec v0.18.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:32.8195318Z    Compiling gix-shallow v0.12.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:33.0098262Z    Compiling gix-negotiate v0.32.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:33.4278568Z    Compiling wasmparser v0.207.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:33.9707843Z    Compiling maybe-async v0.2.10
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:34.4668646Z    Compiling regex v1.12.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:34.7407908Z    Compiling io-close v0.3.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:34.8547808Z    Compiling lazy_static v1.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:34.9048229Z    Compiling powerfmt v0.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:35.1018089Z    Compiling strsim v0.11.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:35.9017981Z    Compiling indenter v0.3.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:35.9778109Z    Compiling binfarce v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:36.0908017Z    Compiling clap_lex v1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:36.3779294Z    Compiling rustc-demangle v0.1.27
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:37.4757868Z    Compiling either v1.15.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:37.6448058Z    Compiling topological-sort v0.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:37.7487827Z    Compiling heck v0.5.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:37.8877920Z    Compiling fixedbitset v0.5.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:38.3467997Z    Compiling petgraph v0.8.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:39.4637859Z    Compiling clap_derive v4.6.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:40.5125472Z    Compiling auditable-serde v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:41.1867910Z    Compiling rayon v1.12.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:41.2538279Z    Compiling backtrace v0.3.76
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:41.8938053Z    Compiling auditable-extract v0.3.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:42.0488083Z    Compiling clap_builder v4.6.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:44.3458079Z    Compiling deranged v0.5.8
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:45.8038089Z    Compiling sharded-slab v0.1.7
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:46.4018053Z    Compiling gix-worktree-state v0.31.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:46.8130755Z    Compiling gix-submodule v0.31.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:47.3857964Z    Compiling gix-odb v0.81.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:50.5217907Z    Compiling gix-discover v0.52.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:51.7795028Z    Compiling tracing-log v0.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:52.0537509Z    Compiling smol_str v0.3.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:52.3003722Z    Compiling gix-diff v0.64.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:52.5518100Z    Compiling toml_datetime v1.1.1+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:52.9197957Z    Compiling matchers v0.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:53.0007423Z    Compiling toml-span v0.7.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:53.5886511Z    Compiling thread_local v1.1.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:53.7749280Z    Compiling nu-ansi-term v0.50.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:53.9338446Z    Compiling ident_case v1.0.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:53.9908004Z    Compiling twox-hash v2.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:54.0868120Z    Compiling rustc-stable-hash v0.1.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:54.2347819Z    Compiling object v0.39.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:54.2467470Z    Compiling time-core v0.1.8
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:54.3506405Z    Compiling num-conv v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:54.3888092Z    Compiling abscissa_derive v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:54.4663301Z    Compiling time v0.3.47
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:54.6668009Z    Compiling tracing-subscriber v0.3.23
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:56.6158042Z    Compiling toml v1.1.2+spec-1.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:58.1727191Z    Compiling color-eyre v0.6.5
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:10:59.5028015Z    Compiling clap v4.6.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:00.1275446Z    Compiling auditable-info v0.10.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:01.0862416Z    Compiling cargo-lock v11.0.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:01.1367707Z    Compiling quitters v0.1.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:01.4414316Z    Compiling platforms v3.10.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:01.8148051Z    Compiling secrecy v0.10.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:01.8729159Z    Compiling cvss v2.2.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:01.9118049Z    Compiling wasmparser v0.247.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:03.9925441Z    Compiling wait-timeout v0.2.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:04.4337706Z    Compiling home v0.5.12
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:04.5254245Z    Compiling canonical-path v2.0.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:04.6848078Z    Compiling termcolor v1.4.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:05.1108094Z    Compiling abscissa_core v0.9.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:08.8939470Z    Compiling display-error-chain v0.2.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:24.2795526Z    Compiling rustls-webpki v0.103.13
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:27.9113208Z    Compiling tokio-rustls v0.26.4
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:27.9114171Z    Compiling rustls-platform-verifier v0.7.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:28.1538057Z    Compiling hyper-rustls v0.27.9
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:28.4488247Z    Compiling reqwest v0.13.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:34.0702814Z    Compiling gix-transport v0.57.1
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:34.4357071Z    Compiling tame-index v0.26.3
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:36.1340086Z    Compiling gix-protocol v0.62.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:39.9971643Z    Compiling gix v0.84.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:44.6667837Z    Compiling rustsec v0.33.0
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:11:46.9677903Z    Compiling cargo-audit v0.22.2
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:12:07.5701330Z     Finished `release` profile [optimized] target(s) in 2m 50s
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:12:07.6061108Z   Installing /home/runner/.cargo/bin/cargo-audit
+verify	Run cargo install cargo-audit --locked --version 0.22.2	2026-10-23T06:12:07.6062210Z    Installed package `cargo-audit v0.22.2` (executable `cargo-audit`)
+verify	Run cargo audit --deny warnings	﻿2026-10-23T06:12:07.7830701Z ##[group]Run cargo audit --deny warnings
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7831089Z ^[[36;1mcargo audit --deny warnings^[[0m
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7893457Z shell: /usr/bin/bash -e {0}
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7893722Z env:
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7893993Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7894448Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7894893Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7895287Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7895677Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7896058Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.7896379Z ##[endgroup]
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:07.8379811Z     Fetching advisory database from `https://github.com/RustSec/advisory-db.git`
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:11.5614446Z       Loaded 1349 security advisories (from /home/runner/.cargo/advisory-db)
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:11.5615386Z     Updating crates.io index
+verify	Run cargo audit --deny warnings	2026-10-23T06:12:11.5753973Z     Scanning Cargo.lock for vulnerabilities (55 crate dependencies)
+verify	Run .venv/bin/pip-audit	﻿2026-10-23T06:12:11.6229085Z ##[group]Run .venv/bin/pip-audit
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6229431Z ^[[36;1m.venv/bin/pip-audit^[[0m
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6292388Z shell: /usr/bin/bash -e {0}
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6292654Z env:
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6292924Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6293383Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6293821Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6294212Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6294603Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6294987Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:11.6295518Z ##[endgroup]
+verify	Run .venv/bin/pip-audit	2026-10-23T06:12:13.3586697Z No known vulnerabilities found
+verify	Run docker build -t seal:test .	﻿2026-10-23T06:12:13.4063752Z ##[group]Run docker build -t seal:test .
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4064120Z ^[[36;1mdocker build -t seal:test .^[[0m
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4122987Z shell: /usr/bin/bash -e {0}
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4123234Z env:
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4123504Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4123948Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4124376Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4124788Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4125171Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4125563Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run docker build -t seal:test .	2026-10-23T06:12:13.4125884Z ##[endgroup]
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.2779501Z #0 building with "default" instance using docker driver
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.2780039Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.2780384Z #1 [internal] load build definition from Dockerfile
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.2781056Z #1 transferring dockerfile: 482B 0.0s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.2781610Z #1 DONE 0.1s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.2781821Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.2782315Z #2 [internal] load metadata for docker.io/library/debian:bookworm-slim
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.5317669Z #2 ...
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.5318075Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.5318467Z #3 [auth] library/debian:pull token for registry-1.docker.io
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.5319003Z #3 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.5319173Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.5319486Z #4 [auth] library/rust:pull token for registry-1.docker.io
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.5319956Z #4 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.6818628Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.6824815Z #5 [internal] load metadata for docker.io/library/rust:1.99.1-bookworm
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.9710610Z #5 ...
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.9710914Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.9711463Z #2 [internal] load metadata for docker.io/library/debian:bookworm-slim
+verify	Run docker build -t seal:test .	2026-10-23T06:12:19.9712164Z #2 DONE 0.8s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.0718939Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.0720200Z #5 [internal] load metadata for docker.io/library/rust:1.99.1-bookworm
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.0721363Z #5 DONE 0.9s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.0721629Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.0722066Z #6 [internal] load .dockerignore
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.0722686Z #6 transferring context: 78B done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.0723186Z #6 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.2821754Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.2823018Z #7 [internal] load build context
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.2823675Z #7 transferring context: 87.65kB done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.2824105Z #7 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.2824287Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.2825214Z #8 [stage-1 1/5] FROM docker.io/library/debian:bookworm-slim@sha256:7ff6ba31527b9e336162fa061746c366c4b2032f4d2cff2078bea43f78efe3f8
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.2827158Z #8 resolve docker.io/library/debian:bookworm-slim@sha256:7ff6ba31527b9e336162fa061746c366c4b2032f4d2cff2078bea43f78efe3f8 0.0s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.2828158Z #8 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 14.68MB / 28.25MB 0.2s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.4500866Z #8 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 28.25MB / 28.25MB 0.2s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:20.4502614Z #8 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4578115Z #8 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 1.9s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4578964Z #8 DONE 2.2s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4579293Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4580615Z #9 [build 1/5] FROM docker.io/library/rust:1.99.1-bookworm@sha256:48b7f435b8fc6378ce43b44f15e3a47fd8919b2825f835c39bd4bd3da50af5b8
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4582543Z #9 resolve docker.io/library/rust:1.99.1-bookworm@sha256:48b7f435b8fc6378ce43b44f15e3a47fd8919b2825f835c39bd4bd3da50af5b8 0.0s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4584263Z #9 sha256:a502800b31e54e7ea2698fec486640dfcee1590902228c7d4cf230cfcfc65bb9 221.85MB / 221.85MB 1.8s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4585268Z #9 sha256:8145ffc7a2f0dffd51043904ca409df2bcb0c4113f9f6710aaa4f55f8812e400 211.76MB / 211.76MB 2.1s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4586633Z #9 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 64.43MB / 64.43MB 0.7s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4588268Z #9 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 23.87MB / 23.87MB 0.3s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4589751Z #9 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 48.52MB / 48.52MB 0.4s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:22.4608387Z #9 extracting sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.0183543Z #9 ...
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.0183866Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.0184860Z #10 [stage-1 2/5] RUN useradd --uid 10001 --create-home app && mkdir -p /app/data && chown app:app /app/data
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.0185758Z #10 DONE 0.7s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.2062273Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.2062820Z #11 [stage-1 3/5] WORKDIR /app
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.2063214Z #11 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.2063352Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.2063908Z #9 [build 1/5] FROM docker.io/library/rust:1.99.1-bookworm@sha256:48b7f435b8fc6378ce43b44f15e3a47fd8919b2825f835c39bd4bd3da50af5b8
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.2065540Z #9 extracting sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 2.0s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.2067090Z #9 extracting sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.3899052Z #9 extracting sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 0.4s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.3899651Z #9 DONE 3.3s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.5400809Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.5405952Z #9 [build 1/5] FROM docker.io/library/rust:1.99.1-bookworm@sha256:48b7f435b8fc6378ce43b44f15e3a47fd8919b2825f835c39bd4bd3da50af5b8
+verify	Run docker build -t seal:test .	2026-10-23T06:12:23.5407733Z #9 extracting sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:24.7224421Z #9 extracting sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 1.3s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:24.7225566Z #9 DONE 4.6s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:24.8729601Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:24.8731032Z #9 [build 1/5] FROM docker.io/library/rust:1.99.1-bookworm@sha256:48b7f435b8fc6378ce43b44f15e3a47fd8919b2825f835c39bd4bd3da50af5b8
+verify	Run docker build -t seal:test .	2026-10-23T06:12:24.8732841Z #9 extracting sha256:8145ffc7a2f0dffd51043904ca409df2bcb0c4113f9f6710aaa4f55f8812e400
+verify	Run docker build -t seal:test .	2026-10-23T06:12:28.2240330Z #9 extracting sha256:8145ffc7a2f0dffd51043904ca409df2bcb0c4113f9f6710aaa4f55f8812e400 3.5s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:28.2241288Z #9 DONE 8.1s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:28.3744030Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:28.3745413Z #9 [build 1/5] FROM docker.io/library/rust:1.99.1-bookworm@sha256:48b7f435b8fc6378ce43b44f15e3a47fd8919b2825f835c39bd4bd3da50af5b8
+verify	Run docker build -t seal:test .	2026-10-23T06:12:28.3749129Z #9 extracting sha256:a502800b31e54e7ea2698fec486640dfcee1590902228c7d4cf230cfcfc65bb9
+verify	Run docker build -t seal:test .	2026-10-23T06:12:30.7020959Z #9 extracting sha256:a502800b31e54e7ea2698fec486640dfcee1590902228c7d4cf230cfcfc65bb9 2.5s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:30.7022051Z #9 DONE 10.6s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:30.8540319Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:30.8540933Z #12 [build 2/5] WORKDIR /build
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.1170956Z #12 DONE 3.4s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.2983942Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.2984646Z #13 [build 3/5] COPY Cargo.toml Cargo.lock ./
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.2985211Z #13 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.2985363Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.2985527Z #14 [build 4/5] COPY src ./src
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.2985830Z #14 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.2985966Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.3285118Z #15 [build 5/5] RUN cargo build --release --locked
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.3285987Z #15 0.180     Updating crates.io index
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.5162051Z #15 0.271  Downloading crates ...
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.5162872Z #15 0.368   Downloaded block-buffer v0.10.4
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6207811Z #15 0.386   Downloaded ascii v1.1.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6208900Z #15 0.389   Downloaded cfg-if v1.0.5
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6209895Z #15 0.391   Downloaded chunked_transfer v1.5.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6210797Z #15 0.395   Downloaded base64ct v1.8.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6211626Z #15 0.423   Downloaded crypto-common v0.1.7
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6212539Z #15 0.426   Downloaded curve25519-dalek-derive v0.1.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6213816Z #15 0.428   Downloaded httpdate v1.0.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6214608Z #15 0.430   Downloaded fs2 v0.4.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6215681Z #15 0.431   Downloaded rustc_version v0.4.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6216523Z #15 0.433   Downloaded version_check v0.9.5
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6217689Z #15 0.435   Downloaded rand_chacha v0.3.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6218495Z #15 0.437   Downloaded itoa v1.0.18
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6219259Z #15 0.439   Downloaded subtle v2.6.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6220073Z #15 0.442   Downloaded cpufeatures v0.2.17
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6220915Z #15 0.444   Downloaded generic-array v0.14.7
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6221732Z #15 0.446   Downloaded signature v2.2.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6222511Z #15 0.448   Downloaded zeroize v1.9.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6223290Z #15 0.451   Downloaded digest v0.10.7
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6224021Z #15 0.454   Downloaded ed25519 v2.2.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6224819Z #15 0.456   Downloaded hex v0.4.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6225592Z #15 0.459   Downloaded rand_core v0.6.4
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6226402Z #15 0.461   Downloaded sha2 v0.10.9
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6227407Z #15 0.465   Downloaded spki v0.7.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6228967Z #15 0.468   Downloaded pkcs8 v0.10.2
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.6230022Z #15 0.473   Downloaded ppv-lite86 v0.2.21
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7339295Z #15 0.475   Downloaded quote v1.0.47
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7340272Z #15 0.480   Downloaded getrandom v0.2.17
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7340892Z #15 0.484   Downloaded semver v1.0.28
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7341490Z #15 0.488   Downloaded proc-macro2 v1.0.107
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7342115Z #15 0.492   Downloaded serde_derive v1.0.228
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7342706Z #15 0.496   Downloaded ryu v1.0.23
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7343125Z #15 0.500   Downloaded tiny_http v0.12.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7343497Z #15 0.506   Downloaded const-oid v0.9.6
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7343833Z #15 0.508   Downloaded log v0.4.34
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7344182Z #15 0.512   Downloaded unicode-ident v1.0.27
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7344562Z #15 0.515   Downloaded serde_core v1.0.228
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7344932Z #15 0.519   Downloaded rand v0.8.8
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7345257Z #15 0.523   Downloaded serde v1.0.228
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7345633Z #15 0.528   Downloaded ed25519-dalek v2.2.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7345981Z #15 0.532   Downloaded memchr v2.8.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7346315Z #15 0.540   Downloaded typenum v1.20.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7346645Z #15 0.544   Downloaded der v0.7.10
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7347398Z #15 0.552   Downloaded serde_json v1.0.145
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7347787Z #15 0.562   Downloaded curve25519-dalek v4.1.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7348150Z #15 0.572   Downloaded syn v2.0.119
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.7348478Z #15 0.586   Downloaded zerocopy v0.8.63
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.8609131Z #15 0.626   Downloaded libc v0.2.191
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.8609806Z #15 0.713    Compiling version_check v0.9.5
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.8610640Z #15 0.713    Compiling proc-macro2 v1.0.107
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.9982914Z #15 0.713    Compiling libc v0.2.191
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.9983968Z #15 0.713    Compiling quote v1.0.47
+verify	Run docker build -t seal:test .	2026-10-23T06:12:34.9984902Z #15 0.850    Compiling unicode-ident v1.0.27
+verify	Run docker build -t seal:test .	2026-10-23T06:12:35.1128467Z #15 0.920    Compiling generic-array v0.14.7
+verify	Run docker build -t seal:test .	2026-10-23T06:12:35.1129556Z #15 0.931    Compiling cfg-if v1.0.5
+verify	Run docker build -t seal:test .	2026-10-23T06:12:35.1130725Z #15 0.964    Compiling typenum v1.20.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:35.3200448Z #15 1.021    Compiling zerocopy v0.8.63
+verify	Run docker build -t seal:test .	2026-10-23T06:12:35.5683363Z #15 1.269    Compiling semver v1.0.28
+verify	Run docker build -t seal:test .	2026-10-23T06:12:35.8579241Z #15 1.557    Compiling rustc_version v0.4.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:36.1158238Z #15 1.749    Compiling syn v2.0.119
+verify	Run docker build -t seal:test .	2026-10-23T06:12:36.1169328Z #15 1.816    Compiling serde_core v1.0.228
+verify	Run docker build -t seal:test .	2026-10-23T06:12:36.5113911Z #15 2.212    Compiling getrandom v0.2.17
+verify	Run docker build -t seal:test .	2026-10-23T06:12:36.6953532Z #15 2.410    Compiling rand_core v0.6.4
+verify	Run docker build -t seal:test .	2026-10-23T06:12:36.6955008Z #15 2.458    Compiling block-buffer v0.10.4
+verify	Run docker build -t seal:test .	2026-10-23T06:12:36.6956106Z #15 2.547    Compiling crypto-common v0.1.7
+verify	Run docker build -t seal:test .	2026-10-23T06:12:36.8815000Z #15 2.605    Compiling digest v0.10.7
+verify	Run docker build -t seal:test .	2026-10-23T06:12:36.8816657Z #15 2.615    Compiling curve25519-dalek v4.1.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:37.0838677Z #15 2.733    Compiling cpufeatures v0.2.17
+verify	Run docker build -t seal:test .	2026-10-23T06:12:37.0840332Z #15 2.795    Compiling zeroize v1.9.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:37.1916058Z #15 2.936    Compiling subtle v2.6.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:37.3427552Z #15 3.043    Compiling serde v1.0.228
+verify	Run docker build -t seal:test .	2026-10-23T06:12:37.5338324Z #15 3.210    Compiling serde_json v1.0.145
+verify	Run docker build -t seal:test .	2026-10-23T06:12:37.5339273Z #15 3.304    Compiling signature v2.2.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:37.6842062Z #15 3.385    Compiling ed25519 v2.2.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:37.8798315Z #15 3.580    Compiling sha2 v0.10.9
+verify	Run docker build -t seal:test .	2026-10-23T06:12:39.7101881Z #15 5.461    Compiling curve25519-dalek-derive v0.1.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:39.7103093Z #15 5.504    Compiling serde_derive v1.0.228
+verify	Run docker build -t seal:test .	2026-10-23T06:12:39.8628211Z #15 5.562    Compiling itoa v1.0.18
+verify	Run docker build -t seal:test .	2026-10-23T06:12:40.0488837Z #15 5.750    Compiling httpdate v1.0.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:40.3167098Z #15 6.067    Compiling chunked_transfer v1.5.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:40.4678331Z #15 6.168    Compiling ryu v1.0.23
+verify	Run docker build -t seal:test .	2026-10-23T06:12:40.7399489Z #15 6.441    Compiling ascii v1.1.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:40.9428336Z #15 6.644    Compiling ppv-lite86 v0.2.21
+verify	Run docker build -t seal:test .	2026-10-23T06:12:41.2794369Z #15 6.917    Compiling memchr v2.8.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:41.2795370Z #15 6.980    Compiling rand_chacha v0.3.1
+verify	Run docker build -t seal:test .	2026-10-23T06:12:41.9022275Z #15 7.603    Compiling log v0.4.34
+verify	Run docker build -t seal:test .	2026-10-23T06:12:42.0651164Z #15 7.766    Compiling tiny_http v0.12.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:43.4910209Z #15 9.192    Compiling rand v0.8.8
+verify	Run docker build -t seal:test .	2026-10-23T06:12:43.7283785Z #15 9.429    Compiling ed25519-dalek v2.2.0
+verify	Run docker build -t seal:test .	2026-10-23T06:12:44.0301159Z #15 9.767    Compiling fs2 v0.4.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:44.1802688Z #15 9.882    Compiling hex v0.4.3
+verify	Run docker build -t seal:test .	2026-10-23T06:12:44.4578444Z #15 10.16    Compiling seal-log v0.1.0 (/build)
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.5663008Z #15 13.42     Finished `release` profile [optimized] target(s) in 13.27s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.7018154Z #15 DONE 13.6s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8507859Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8509014Z #16 [stage-1 4/5] COPY --from=build /build/target/release/seal /usr/local/bin/seal
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8509896Z #16 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8510121Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8510376Z #17 [stage-1 5/5] COPY web ./web
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8510815Z #17 DONE 0.0s
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8511008Z 
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8511192Z #18 exporting to image
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.8511652Z #18 exporting layers 0.1s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.9717481Z #18 exporting manifest sha256:4e64e966246276248e78217600b6326327363292c5a8756f77316bd263ed1b37 done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.9719473Z #18 exporting config sha256:abb7756343cf01477afc326d1ff3f224624c98a0e669cb579ea1602f1854649d done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.9720934Z #18 exporting attestation manifest sha256:ada83b841b67b274126119f9684ee0147d53d151b820811933e2581045fac6e0 done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.9722419Z #18 exporting manifest list sha256:22541a4fbdfdbf7faed4e526c453f91967d722171738c05a14faadc7cf080f5e done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.9723202Z #18 naming to docker.io/library/seal:test done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.9724030Z #18 unpacking to docker.io/library/seal:test 0.0s done
+verify	Run docker build -t seal:test .	2026-10-23T06:12:47.9724646Z #18 DONE 0.2s
+verify	Run python3 scripts/container_smoke.py	﻿2026-10-23T06:12:47.9827934Z ##[group]Run python3 scripts/container_smoke.py
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9828370Z ^[[36;1mpython3 scripts/container_smoke.py^[[0m
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9888428Z shell: /usr/bin/bash -e {0}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9888679Z env:
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9888942Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9889404Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9889839Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9890224Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9890605Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9890998Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:47.9891321Z ##[endgroup]
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:48.0941135Z bb1c5dc790372cc5d97d9053b9b50eed80dbf2301db490b657a976f0853a3335
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:48.6703194Z seal-ci-smoke
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:48.8107970Z seal-ci-smoke
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.1202131Z seal-ci-smoke
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2362972Z {"demo_key":true,"event":"ready","url":"http://0.0.0.0:8093"}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2364320Z {"error":"incomplete entry tail","verified":false}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2364957Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2368054Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2368807Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2369468Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2370107Z {"event":"http","status":401}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2370733Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2371346Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2371962Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2372584Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2373399Z {"demo_key":true,"event":"ready","url":"http://0.0.0.0:8093"}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2374252Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2374893Z {"event":"http","status":200}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2597964Z seal-ci-smoke
+verify	Run python3 scripts/container_smoke.py	2026-10-23T06:12:59.2616269Z {"actual_image": true, "uid": "10001", "static_assets": true, "auth": true, "valid_proofs": true, "sigkill_checkpoint_persisted": true, "incomplete_tail_startup_rejected": true}
+verify	Post Run actions/setup-node@v4	﻿2026-10-23T06:12:59.2828739Z Post job cleanup.
+verify	Post Run actions/setup-node@v4	2026-10-23T06:12:59.4188559Z (node:11948) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-node@v4	2026-10-23T06:12:59.4190048Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/setup-python@v5	﻿2026-10-23T06:12:59.4378162Z Post job cleanup.
+verify	Post Run actions/setup-python@v5	2026-10-23T06:12:59.5730941Z (node:11962) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-python@v5	2026-10-23T06:12:59.5732846Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/checkout@v4	﻿2026-10-23T06:12:59.5976015Z Post job cleanup.
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.6881168Z [command]/usr/bin/git version
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.6919169Z git version 2.55.0
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.6961687Z Temporarily overriding HOME='/home/runner/work/_temp/f92b7f40-6b2d-44d2-9ce7-5636d9c409d4' before making global git config changes
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.6963282Z Adding repository directory to the temporary git global config as a safe directory
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.6967375Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/seal/seal
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.7011444Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.7050843Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.7361746Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.7390053Z http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.7402080Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.7446720Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.7772697Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Post Run actions/checkout@v4	2026-10-23T06:12:59.7811217Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Complete job	﻿2026-10-23T06:12:59.8246095Z Cleaning up orphan processes
+verify	Complete job	2026-10-23T06:12:59.8756415Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
