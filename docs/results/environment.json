@@ -14,7 +14,7 @@
     "web/index.html": "565b16b282eea23eb7196b25679a4eb927e75d54fd358b07b09e264a33aba0a2",
     "web/style.css": "63bd9e911f29b118ba22566510f5a4b2b554a44330f9ff3bed06a05f1ac5edbd",
     "web/app.js": "97ac0cf6cb1cc8e02c9af6004b5c91b16c77c3d35ba51da4d189b2aca23bc3b7",
-    "tests/core.rs": "1c9a16d21520bf027d12ffd3bc8f926dab8baba64f1e2a681f52bc60b28a1a88",
+    "tests/core.rs": "e7ce831a1c93af9df7308b3432867d92ae6f286b7fc16e1f3e0146d08e200b46",
     "tests/cli_test.py": "597264ef5b34e756964415a540435c0f3d125ce6c2181ba5e30c61591da4ddcb"
   },
   "hardware": {

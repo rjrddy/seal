@@ -141,3 +141,44 @@ fn payload_limits_and_canonical_hex() {
     let e = Entry::new(0, [0; 32], b"").unwrap();
     e.validate().unwrap();
 }
+
+#[test]
+fn rehashed_history_and_validly_signed_fork_fail_the_retained_commitment() {
+    let original = entries(31);
+    let key = SigningKey::from_bytes(&[0x29; 32]);
+    let id = [0x17; 32];
+    let pinned = Checkpoint::unsigned(id, &original)
+        .unwrap()
+        .sign(&key)
+        .unwrap();
+    let older = Checkpoint::unsigned(id, &original[..19])
+        .unwrap()
+        .sign(&key)
+        .unwrap();
+    let mut rewritten: Vec<Entry> = vec![];
+    for (i, entry) in original.iter().enumerate() {
+        let previous = rewritten
+            .last()
+            .map(|e| hash_from(&e.hash).unwrap())
+            .unwrap_or([0; 32]);
+        let payload = if i == 4 {
+            b"rewritten synthetic event".to_vec()
+        } else {
+            hex::decode(&entry.payload).unwrap()
+        };
+        rewritten.push(Entry::new(i as u64, previous, &payload).unwrap());
+    }
+    verify_chain(&rewritten).unwrap(); // A chain alone cannot expose the rewritten history.
+    assert!(verify_log(&rewritten, &pinned, &key.verifying_key(), id).is_err());
+    // Even a valid new signature (compromised signer) cannot hide a fork from a retained head.
+    let fork = Checkpoint::unsigned(id, &rewritten)
+        .unwrap()
+        .sign(&key)
+        .unwrap();
+    fork.verify(&key.verifying_key(), id).unwrap();
+    let claim = Consistency::create(&rewritten, older, fork).unwrap();
+    assert!(claim.verify(&key.verifying_key(), id).is_err());
+    println!(
+        "rehashed_chain_valid=true pinned_history_rejected=true validly_signed_fork_rejected=true"
+    );
+}

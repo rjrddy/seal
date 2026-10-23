@@ -49,7 +49,7 @@ An acknowledged default append has completed OS fsync; hardware power-loss behav
 
 Path sizes above count binary sibling hashes only. The measured compact JSON bundles are 1519 bytes for inclusion and 1758 bytes for consistency, including the entry/checkpoint/signatures. Verification timings include Ed25519, validation and Merkle hashing, exclude parsing/network/proof generation, and are local observations. Per-entry and batched-fsync rates must not be compared as equivalent per-record acknowledgement guarantees.
 
-5 Rust tests and 5 real CLI/HTTP/file/process tests pass ([commands](docs/results/gates.txt)); a fresh independent clone passes setup/lint/tests/bench and actual `make demo`. Real SIGKILL/restart preserves an acknowledged signed append. [Quality report](docs/QUALITY.md) tracks native, browser, audit and actual Linux-container evidence.
+6 Rust tests and 5 real CLI/HTTP/file/process tests pass ([commands](docs/results/gates.txt)); a fresh independent clone passes setup/lint/tests/bench and actual `make demo`. Real SIGKILL/restart preserves an acknowledged signed append. [Quality report](docs/QUALITY.md) tracks native, browser, audit and actual Linux-container evidence.
 
 Caught failures are retained: [compiler/header lifetime error](docs/results/development-lint.txt), [unsafe dependency rejected by the audit gate](docs/results/caught-audit-gate.txt), and [browser editor/load race](docs/results/caught-browser-load-race.txt). The dependency was upgraded; inputs lock during verification and stale verdicts clear. The current RustSec gate denies warnings without exclusions. Browser checks cover valid/corrupted native fixtures, both proof kinds, pinned-key preservation, download, responsive layouts and network recovery.
 
