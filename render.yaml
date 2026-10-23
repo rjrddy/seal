@@ -1,0 +1,12 @@
+# Prepared only. Public deterministic demo key; ephemeral demo storage, not hosted durable custody.
+services:
+  - type: web
+    name: seal-proof-verifier
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: SEAL_ADDR
+        value: 0.0.0.0:8093
+      - key: SEAL_TOKEN
+        generateValue: true
