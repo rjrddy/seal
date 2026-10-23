@@ -1,5 +1,5 @@
 {
-  "source_commit": "7c20f57db2fc8ed2fa012ccf5ab02f3926af0667",
+  "source_commit": "52e5baf16ca4713eb22265358b59445353dac947",
   "checks": [
     "setup",
     "lint",

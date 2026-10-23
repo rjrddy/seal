@@ -1,6 +1,6 @@
 ./scripts/cargo.sh fmt --check
 ./scripts/cargo.sh clippy --all-targets --locked -- -D warnings
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.07s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.17s
 .venv/bin/ruff check scripts tests
 All checks passed!
 .venv/bin/ruff format --check scripts tests

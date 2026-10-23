@@ -35,7 +35,7 @@ Requirement already satisfied: mdurl~=0.1 in ./.venv/lib/python3.13/site-package
 ./scripts/cargo.sh build --release --locked
     Finished `release` profile [optimized] target(s) in 0.03s
 ./target/release/seal serve .cache/demo
-{"demo_key":true,"event":"ready","url":"http://127.0.0.1:55166"}
+{"demo_key":true,"event":"ready","url":"http://127.0.0.1:55265"}
 {"event":"http","status":200}
 {"event":"http","status":200}
 {"event":"http","status":200}
