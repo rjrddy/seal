@@ -1,0 +1,10 @@
+test_actual_disk_byte_deletion_reorder_and_tail_rollback (cli_test.Files.test_actual_disk_byte_deletion_reorder_and_tail_rollback) ... ok
+test_incomplete_tail_fails_closed_and_is_never_silently_repaired (cli_test.Files.test_incomplete_tail_fails_closed_and_is_never_silently_repaired) ... ok
+test_key_file_protection_and_complete_cli_proofs (cli_test.Files.test_key_file_protection_and_complete_cli_proofs) ... ok
+test_real_cross_process_writer_fence (cli_test.Files.test_real_cross_process_writer_fence) ... ok
+test_sigkill_restart_http_validation_and_auth (cli_test.Service.test_sigkill_restart_http_validation_and_auth) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.815s
+
+OK

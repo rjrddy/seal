@@ -1,0 +1,28 @@
+    Checking seal-log v0.1.0 (/Users/rajreddy/dev/outreach/seal)
+error: unused import: `Checkpoint`
+ --> src/web.rs:3:5
+  |
+3 |     Checkpoint, Consistency, Error, Inclusion, Result, hash_from, require, storage::Store,
+  |     ^^^^^^^^^^
+  |
+  = note: `-D unused-imports` implied by `-D warnings`
+  = help: to override `-D warnings` add `#[allow(unused_imports)]`
+
+error[E0521]: borrowed data escapes outside of function
+  --> src/web.rs:32:19
+   |
+28 | fn text_header(request: &Request, name: &str) -> Option<String> {
+   |                                   ----  - let's call the lifetime of this reference `'1`
+   |                                   |
+   |                                   `name` is a reference that is only valid in the function body
+...
+32 |         .find(|h| h.field.equiv(name))
+   |                   ^^^^^^^^^^^^^^^^^^^
+   |                   |
+   |                   `name` escapes the function body here
+   |                   argument requires that `'1` must outlive `'static`
+
+For more information about this error, try `rustc --explain E0521`.
+error: could not compile `seal-log` (bin "seal") due to 2 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `seal-log` (bin "seal" test) due to 2 previous errors

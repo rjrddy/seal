@@ -1,0 +1,2 @@
+command: cargo audit --deny warnings --file docs/results/caught-rand-Cargo.lock --json
+exit_code=1

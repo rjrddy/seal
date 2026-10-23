@@ -1,0 +1,25 @@
+{
+  "command": "make lint test bench",
+  "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.2",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "source_sha256": {
+    "src/merkle.rs": "f7ed7615478bd5d0af0e267976676b2b90a18fe960c94e851cf1f354ddd08208",
+    "src/benchmark.rs": "bc65c68e9b2a0b34ba7ed51b3e940011cbf97fe719d927c66cdae6b2efc8f236",
+    "src/lib.rs": "0a6f9e6681c0fb6a35cdaa4f337b976d1ffffb7bd355a52f5b70e20193ca7f6a",
+    "src/web.rs": "4faef3c2029fcce9c6c56962ef47a8e3a3ba5287fe44884e1a6836f148359334",
+    "src/main.rs": "3b70cf9e1d947a45600ad0616ea69d9112f526d062d327415f1e954e145a3740",
+    "src/storage.rs": "2e8f1488b65a02133195035718b6ecf48857909aa04e1a91315864c79dd2bb4f",
+    "web/index.html": "565b16b282eea23eb7196b25679a4eb927e75d54fd358b07b09e264a33aba0a2",
+    "web/style.css": "63bd9e911f29b118ba22566510f5a4b2b554a44330f9ff3bed06a05f1ac5edbd",
+    "web/app.js": "97ac0cf6cb1cc8e02c9af6004b5c91b16c77c3d35ba51da4d189b2aca23bc3b7",
+    "tests/core.rs": "1c9a16d21520bf027d12ffd3bc8f926dab8baba64f1e2a681f52bc60b28a1a88",
+    "tests/cli_test.py": "597264ef5b34e756964415a540435c0f3d125ce6c2181ba5e30c61591da4ddcb"
+  },
+  "hardware": {
+    "hw.model": "Mac14,9",
+    "hw.ncpu": "10",
+    "hw.memsize": "17179869184"
+  }
+}

@@ -1,0 +1,65 @@
+   Compiling cfg-if v1.0.5
+   Compiling typenum v1.20.1
+   Compiling libc v0.2.191
+   Compiling zerocopy v0.8.63
+   Compiling serde_core v1.0.228
+   Compiling zeroize v1.9.1
+   Compiling signature v2.2.0
+   Compiling subtle v2.6.1
+   Compiling ryu v1.0.23
+   Compiling log v0.4.34
+   Compiling memchr v2.8.3
+   Compiling ed25519 v2.2.3
+   Compiling httpdate v1.0.3
+   Compiling chunked_transfer v1.5.0
+   Compiling ascii v1.1.0
+   Compiling itoa v1.0.18
+   Compiling hex v0.4.3
+   Compiling tiny_http v0.12.0
+   Compiling generic-array v0.14.7
+   Compiling getrandom v0.2.17
+   Compiling cpufeatures v0.2.17
+   Compiling fs2 v0.4.3
+   Compiling rand_core v0.6.4
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling curve25519-dalek v4.1.3
+   Compiling ed25519-dalek v2.2.0
+   Compiling serde_json v1.0.145
+   Compiling serde v1.0.228
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.5
+   Compiling seal-log v0.1.0 (/Users/rajreddy/dev/outreach/seal)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.02s
+     Running unittests src/lib.rs (target/debug/deps/seal_log-a62fc57def2ebaf7)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/seal-b1bad921cb33e619)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (target/debug/deps/core-4fec63ee8a2b4218)
+
+running 5 tests
+test payload_limits_and_canonical_hex ... ok
+test signed_bundles_trust_anchor_and_malformed_bounds ... ok
+test empty_and_chain_mutations ... ok
+test independent_reference_tree_matches ... ok
+test every_small_tree_inclusion_and_consistency ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.83s
+
+   Doc-tests seal_log
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
