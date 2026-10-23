@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#8b2929" />
+    <title>Seal — establish the record</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a class="brand" href="/"
+          >seal<span>APPEND-ONLY / TAMPER-EVIDENT</span></a
+        >
+        <div class="header-right">
+          <span id="connection" role="status">CONNECTING TO LOCAL LOG</span
+          ><a href="https://github.com/rjrddy/seal">SOURCE ↗</a>
+        </div>
+      </header>
+      <section class="masthead">
+        <div class="edition">
+          A RECORD OF WHAT WAS.<br />EVIDENCE OF WHAT CHANGED.
+        </div>
+        <h1>Establish<br /><em>the record.</em></h1>
+        <div class="seal-mark" aria-label="Verify, do not assume">
+          <span>VERIFY</span><b>S</b><span>DO NOT ASSUME</span>
+        </div>
+      </section>
+      <div class="demo-notice">
+        <b>PUBLIC DEMO KEY</b
+        ><span
+          >Synthetic records. This key is known and is not a private signing
+          identity. This page is not an external witness.</span
+        >
+      </div>
+      <main>
+        <section class="log-sheet">
+          <div class="section-heading">
+            <span>01 / THE LOG</span
+            ><button id="append">Append synthetic record + seal ↗</button>
+          </div>
+          <div class="log-summary">
+            <div>
+              <strong id="size">—</strong><span>COMMITTED RECORDS</span>
+            </div>
+            <p>
+              Hash-linked entries.<br />Signed Merkle checkpoints.<br />An
+              original you can challenge.
+            </p>
+          </div>
+          <dl class="log-facts">
+            <div>
+              <dt>Current signed root</dt>
+              <dd id="root">—</dd>
+            </div>
+            <div>
+              <dt>Last checkpoint</dt>
+              <dd id="checkpoint">—</dd>
+            </div>
+          </dl>
+          <div class="table-title">
+            RECENT SYNTHETIC RECORDS <span>NEWEST FIRST</span>
+          </div>
+          <div id="entries" class="entries"></div>
+          <div class="boundary-note">
+            <b>What a signature cannot tell you</b>
+            <p>
+              A valid older head can hide a rollback if you did not retain a
+              newer one. Pin your public key, log identity and last trusted
+              checkpoint independently.
+            </p>
+            <a href="https://github.com/rjrddy/seal/blob/main/docs/DESIGN.md"
+              >Read the guarantees and limits ↗</a
+            >
+          </div>
+        </section>
+        <section class="proof-sheet">
+          <div class="section-heading">
+            <span>02 / THE EVIDENCE</span
+            ><span class="live-label">LIVE RUST + WEBCRYPTO</span>
+          </div>
+          <div class="proof-heading">
+            <h2>Trust is an input.<br /><em>Proof is the test.</em></h2>
+            <p>
+              Choose a claim. Inspect the bundle.<br />Verify it against the
+              identity you trust.
+            </p>
+          </div>
+          <div class="proof-modes" role="group" aria-label="Proof type">
+            <button id="inclusion" aria-pressed="true">
+              Inclusion <span>Was this entry included?</span></button
+            ><button id="consistency" aria-pressed="false">
+              Consistency <span>Did the old tree survive?</span>
+            </button>
+          </div>
+          <div class="proof-controls">
+            <label
+              >Entry index<input
+                id="index"
+                type="number"
+                min="0"
+                value="37" /></label
+            ><label>Older retained checkpoint<select id="old"></select></label
+            ><button id="load">Load authentic bundle ↺</button>
+          </div>
+          <details class="trust" open>
+            <summary>
+              PINNED TRUST ANCHOR <span>KEEP SEPARATE FROM THE BUNDLE</span>
+            </summary>
+            <label for="public-key">Expected public key</label
+            ><input
+              id="public-key"
+              autocomplete="off"
+              spellcheck="false"
+            /><label for="log-id">Expected log identity</label
+            ><input id="log-id" autocomplete="off" spellcheck="false" />
+            <p>
+              Pre-filled from this synthetic demo. In real use, obtain these
+              through an independent trusted channel.
+            </p>
+          </details>
+          <div class="bundle-label">
+            <label for="bundle">PROOF BUNDLE / EDITABLE JSON</label
+            ><button id="download">Download ↗</button>
+          </div>
+          <textarea
+            id="bundle"
+            spellcheck="false"
+            aria-label="Proof bundle"
+          ></textarea>
+          <div class="tamper">
+            <span>CHALLENGE THE CLAIM</span
+            ><button id="flip">Flip payload byte</button
+            ><button id="drop">Drop proof node</button
+            ><button id="reorder">Reorder proof nodes</button>
+          </div>
+          <button id="verify" class="verify-button">Verify this proof →</button>
+          <div id="receipt" role="status" aria-live="polite">
+            <p class="pending">
+              No verdict yet. The bundle has not been checked.
+            </p>
+          </div>
+        </section>
+      </main>
+      <section class="method">
+        <span>03 / HOW TO READ THE RESULT</span>
+        <div>
+          <h3>Included is not the same as consistent.</h3>
+          <p>
+            Inclusion binds an entry to a signed tree root. Consistency proves a
+            later tree extends an earlier root. The hash chain catches broken
+            sequence links; a retained signed head exposes removal of the tail.
+          </p>
+        </div>
+        <div>
+          <h3>The primitives are standard. The scope is explicit.</h3>
+          <p>
+            SHA-256 and Ed25519, with an original log format and Merkle-path
+            implementation. The viewer checks locally in WebCrypto and compares
+            with Rust. No timestamp authority, independent witness or production
+            key custody is claimed.
+          </p>
+        </div>
+      </section>
+      <details class="connection-settings">
+        <summary>Connection settings</summary>
+        <label for="token">API token for a shared demo</label
+        ><input id="token" type="password" autocomplete="off" /><button
+          id="reconnect"
+        >
+          Reconnect
+        </button>
+      </details>
+      <div id="error" role="alert"></div>
+      <footer>
+        <span>SEAL / EVIDENCE, NOT ASSUMPTION.</span
+        ><a href="https://github.com/rjrddy/seal/blob/main/docs/DEMO.md"
+          >CLI & verification method ↗</a
+        ><span>LOCAL SYNTHETIC LOG / NOT DEPLOYED</span>
+      </footer>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
