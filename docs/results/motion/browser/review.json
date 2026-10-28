@@ -1,0 +1,97 @@
+{
+  "responsive_widths": [
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "page_errors": [],
+  "checks": [
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 96\nEntry hash and canonical byte encoding\nMerkle inclusion path \u00b7 7 nodes\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": false,
+      "verifier_agreement": true,
+      "receipt": "REJECTED\n\nEntry hash mismatch\n\nEd25519 signature \u00b7 tree size 96\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": false,
+      "verifier_agreement": true,
+      "receipt": "REJECTED\n\nMerkle inclusion root mismatch\n\nEd25519 signature \u00b7 tree size 96\nEntry hash and canonical byte encoding\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": false,
+      "verifier_agreement": true,
+      "receipt": "REJECTED\n\nMerkle inclusion root mismatch\n\nEd25519 signature \u00b7 tree size 96\nEntry hash and canonical byte encoding\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 96\nEntry hash and canonical byte encoding\nMerkle inclusion path \u00b7 7 nodes\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 64\nEd25519 signature \u00b7 tree size 96\nAppend-only consistency \u00b7 64 \u2192 96\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": false,
+      "verifier_agreement": true,
+      "receipt": "REJECTED\n\nMissing consistency path\n\nEd25519 signature \u00b7 tree size 64\nEd25519 signature \u00b7 tree size 96\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 64\nEd25519 signature \u00b7 tree size 96\nAppend-only consistency \u00b7 64 \u2192 96\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": false,
+      "verifier_agreement": true,
+      "receipt": "REJECTED\n\nEd25519 signature rejected\n\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 64\nEd25519 signature \u00b7 tree size 97\nAppend-only consistency \u00b7 64 \u2192 97\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 4097\nEntry hash and canonical byte encoding\nMerkle inclusion path \u00b7 13 nodes\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": false,
+      "verifier_agreement": true,
+      "receipt": "REJECTED\n\nMerkle inclusion root mismatch\n\nEd25519 signature \u00b7 tree size 4097\nEntry hash and canonical byte encoding\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 2049\nEd25519 signature \u00b7 tree size 4097\nAppend-only consistency \u00b7 2049 \u2192 4097\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": false,
+      "verifier_agreement": true,
+      "receipt": "REJECTED\n\nMerkle consistency root mismatch\n\nEd25519 signature \u00b7 tree size 2049\nEd25519 signature \u00b7 tree size 4097\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 97\nEntry hash and canonical byte encoding\nMerkle inclusion path \u00b7 7 nodes\nRust and browser WebCrypto agree."
+    },
+    {
+      "verified": true,
+      "verifier_agreement": true,
+      "receipt": "VERIFIED\n\nThe signed claim matches the supplied trust anchor.\n\nEd25519 signature \u00b7 tree size 97\nEntry hash and canonical byte encoding\nMerkle inclusion path \u00b7 7 nodes\nRust and browser WebCrypto agree."
+    }
+  ],
+  "trust_anchor_preserved_on_append": true,
+  "native_large_fixtures_verified": true,
+  "download_valid": true,
+  "network_failure_recovery": true,
+  "keyboard_focus": true,
+  "elapsed_s": 4.435550624970347
+}

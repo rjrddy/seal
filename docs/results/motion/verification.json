@@ -1,0 +1,17 @@
+{
+  "project": "seal",
+  "motion_profile": "Proof impression and hash register",
+  "source_sha256": {
+    "web/app.js": "59ef38d8c00ac966c11c1ce6ab6f592b67675404ff99ddce52a9d4c1bb005c3c",
+    "web/style.css": "625b9804f8409150a7d60725ae13385084410bf48a7c50f8a5a981fca261598e"
+  },
+  "frontend_build_lint": "node --check web/app.js passed; buildless viewer",
+  "motion_contract": "passed",
+  "built_page_smoke": "passed",
+  "live_backend_browser": "passed",
+  "showcase_contract": "not applicable",
+  "compositor_properties_only": true,
+  "live_reduced_motion_cancellation": true,
+  "fps": "not measured",
+  "new_dependencies": 0
+}

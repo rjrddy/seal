@@ -39,6 +39,9 @@ make lint test bench
 
 ## Decisions and limits
 
+Contextual motion uses finite transform-only responses to real controls and changed evidence, with live reduced-motion cancellation. See [motion design and validation](docs/MOTION.md); frame rate is not measured.
+
+
 Complete for the stated local, single-writer log/proof scope. This is tamper **evidence**, not prevention, key custody or a production transparency service. A valid older signed prefix is indistinguishable from rollback unless a verifier retains a newer trusted head; [the benchmark demonstrates both cases](docs/results/bench.json). The demo key is public and provides no private signing identity. Obtain real trust anchors independently; a bundle cannot authorize its own key. The web application is not an external witness, timestamp authority or formal security audit.
 
 The 100% figure covers the injected corpus, not every possible attack or an empirical guarantee of collision resistance. Entry deletion includes tail removal against the retained complete head. Canonical file encoding rejects representational byte edits as well as changed payloads. The file bit-flip sweep covers a separate small fixture; logical mutations cover a larger synthetic log. SHA-256/Ed25519 assumptions and uncompromised trust anchors remain prerequisites.
