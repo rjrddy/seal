@@ -2,7 +2,7 @@
   "project": "seal",
   "motion_profile": "Proof impression and hash register",
   "source_sha256": {
-    "web/app.js": "59ef38d8c00ac966c11c1ce6ab6f592b67675404ff99ddce52a9d4c1bb005c3c",
+    "web/app.js": "205595ef5bcb02123bf480f6a196408903eaf16c990602c34f37e9afb4652939",
     "web/style.css": "625b9804f8409150a7d60725ae13385084410bf48a7c50f8a5a981fca261598e"
   },
   "frontend_build_lint": "node --check web/app.js passed; buildless viewer",
